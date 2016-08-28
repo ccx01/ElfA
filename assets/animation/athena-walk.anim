@@ -1,0 +1,92 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "athena-walk",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.2,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "5d0594bd-3a70-4060-b16e-836e66586707"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "92102ee7-eaad-423c-9e7c-d2e9db61d197"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "cf3b92a9-73cc-429b-8302-3bb246d2af34"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "5c2717e2-0082-4f36-b92b-5f44aa0502ce"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "fa635ebe-c08e-4afd-92f8-64857d52dc1b"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "cb43fb46-d939-4562-a0d6-322a6c152f31"
+            }
+          },
+          {
+            "frame": 0.6,
+            "value": {
+              "__uuid__": "0ef6b500-a917-439b-a7b4-c16db98c64ec"
+            }
+          },
+          {
+            "frame": 0.7,
+            "value": {
+              "__uuid__": "5a6dd874-bd30-4deb-9474-b1321dcc60ba"
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__uuid__": "cc99e710-266d-4de2-8f67-323f793412ac"
+            }
+          },
+          {
+            "frame": 0.9,
+            "value": {
+              "__uuid__": "2eb49ae9-456e-4424-a548-e6bf04db2b1c"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "e823ebfe-0da0-4cc8-aec3-ccdfbe2280a5"
+            }
+          },
+          {
+            "frame": 1.1,
+            "value": {
+              "__uuid__": "4be0c6d3-5ff3-4238-af47-2701a4adae5d"
+            }
+          }
+        ]
+      }
+    },
+    "props": {}
+  },
+  "events": []
+}

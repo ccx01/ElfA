@@ -67,7 +67,7 @@ cc.Class({
                         self.ySpeed = 0;
                         break;
                 }
-                if(self.xSpeed == 0 && self.ySpeed == 0) {
+                if(self.xSpeed === 0 && self.ySpeed === 0) {
                     self.moving = false;
                 }
                 self.refleshClip();

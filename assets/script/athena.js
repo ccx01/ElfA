@@ -2,23 +2,24 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // 主角跳跃高度
-        jumpHeight: 0,
-        // 主角跳跃持续时间
-        jumpDuration: 0,
-        // 最大移动速度
-        maxMoveSpeed: 0,
-        // 加速度
-        accel: 0,
+        anim: cc.Animation,
+        xMaxSpeed: 0,
+        yMaxSpeed: 0,
+        xMaxRange: 0,
+        yMaxRange: 0,
+        moving: false,
     },
 
-    setJumpAction: function () {
-        // 跳跃上升
-        var jumpUp = cc.moveBy(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
-        // 下落
-        var jumpDown = cc.moveBy(this.jumpDuration, cc.p(0, -this.jumpHeight)).easing(cc.easeCubicActionIn());
-        // 不断重复
-        return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
+    refleshClip: function () {
+        if(this.moving) {
+            if(!this.anim.currentClip || this.anim.currentClip.name != "athena-walk") {
+                this.anim.play("athena-walk");
+            }
+        } else {
+            if(!this.anim.currentClip || this.anim.currentClip.name != "athena-stand") {
+                this.anim.play("athena-stand");
+            }
+        }
     },
 
     setInputControl: function () {
@@ -30,41 +31,54 @@ cc.Class({
             onKeyPressed: function(keyCode, event) {
                 switch(keyCode) {
                     case cc.KEY.a:
-                        self.accLeft = true;
-                        self.accRight = false;
+                        self.xSpeed = - self.xMaxSpeed;
+                        self.moving = true;
+                        if(self.node.scaleX > 0) {
+                            self.node.scaleX *= -1;
+                        }
                         break;
                     case cc.KEY.d:
-                        self.accLeft = false;
-                        self.accRight = true;
+                        self.xSpeed = self.xMaxSpeed;
+                        self.moving = true;
+                        if(self.node.scaleX < 0) {
+                            self.node.scaleX *= -1;
+                        }
+                        break;
+                    case cc.KEY.w:
+                        self.ySpeed = self.yMaxSpeed;
+                        self.moving = true;
+                        break;
+                    case cc.KEY.s:
+                        self.ySpeed = - self.yMaxSpeed;
+                        self.moving = true;
                         break;
                 }
+                self.refleshClip();
             },
             // 松开按键时，停止向该方向的加速
             onKeyReleased: function(keyCode, event) {
                 switch(keyCode) {
                     case cc.KEY.a:
-                        self.accLeft = false;
-                        break;
                     case cc.KEY.d:
-                        self.accRight = false;
+                        self.xSpeed = 0;
+                        break;
+                    case cc.KEY.w:
+                    case cc.KEY.s:
+                        self.ySpeed = 0;
                         break;
                 }
+                if(self.xSpeed == 0 && self.ySpeed == 0) {
+                    self.moving = false;
+                }
+                self.refleshClip();
             }
         }, self.node);
     },
     
     // use this for initialization
     onLoad: function () {
-        // 初始化跳跃动作
-        this.jumpAction = this.setJumpAction();
-        this.node.runAction(this.jumpAction);
-
-        // 加速度方向开关
-        this.accLeft = false;
-        this.accRight = false;
-        // 主角当前水平方向速度
         this.xSpeed = 0;
-
+        this.ySpeed = 0;
         // 初始化键盘输入监听
         this.setInputControl();
     },
@@ -72,19 +86,7 @@ cc.Class({
     // called every frame, uncomment this function to activate update callback
     
     update: function (dt) {
-        // 根据当前加速度方向每帧更新速度
-        if (this.accLeft) {
-            this.xSpeed -= this.accel * dt;
-        } else if (this.accRight) {
-            this.xSpeed += this.accel * dt;
-        }
-        // 限制主角的速度不能超过最大值
-        if ( Math.abs(this.xSpeed) > this.maxMoveSpeed ) {
-            // if speed reach limit, use max speed with current direction
-            this.xSpeed = this.maxMoveSpeed * this.xSpeed / Math.abs(this.xSpeed);
-        }
-
-        // 根据当前速度更新主角的位置
         this.node.x += this.xSpeed * dt;
+        this.node.y += this.ySpeed * dt;
     },
 });

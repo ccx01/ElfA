@@ -294,10 +294,11 @@
       "__id__": 5
     },
     "_enabled": true,
-    "jumpHeight": 200,
-    "jumpDuration": 0.3,
-    "maxMoveSpeed": 400,
-    "accel": 350
+    "anim": {
+      "__id__": 7
+    },
+    "xMaxSpeed": 200,
+    "yMaxSpeed": 100
   },
   {
     "__type__": "cc.Canvas",

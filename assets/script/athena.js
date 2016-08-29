@@ -52,7 +52,6 @@ cc.Class({
                         break;
                 }
             },
-            // 松开按键时，停止向该方向的加速
             onKeyReleased: function(keyCode, event) {
                 switch(keyCode) {
                     case cc.KEY.a:

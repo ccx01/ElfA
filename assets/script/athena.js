@@ -5,12 +5,43 @@ cc.Class({
         anim: cc.Animation,
         xMaxSpeed: 0,
         yMaxSpeed: 0,
+        battle: 0,
+        comboTime: 0,
+    },
+    
+    combo: function () {
+        var self = this;
+        if(this.battle > 0) {
+            this.anim.resume("athena-atk");
+        }
+        var clearT = clearTimeout(this.comboTime);
+        this.comboTime = setTimeout(function() {
+            self.battle = 0;
+            self.action("athena-stand");
+        }, 800);
+        
+        if(this.battle === 9) {
+            this.battle = 0;
+            self.action("athena-stand");
+        }
+    },
+    
+    pause: function () {
+        this.anim.pause();
     },
     
     action: function (ani) {
         if(!this.anim.currentClip || this.anim.currentClip.name != ani) {
             this.anim.play(ani);
         }
+    },
+    
+    moveOffset: function (offset) {
+        // 动作修正……
+        if(this.node.scaleX < 0) {
+            offset *= -1;
+        }
+        this.node.x += offset;
     },
 
     setInputControl: function () {
@@ -24,7 +55,14 @@ cc.Class({
                     case cc.KEY.j:
                         self.xSpeed = 0;
                         self.ySpeed = 0;
-                        self.action("athena-atk");
+                        console.log(self.battle)
+                        if(self.battle === 0) {
+                            self.battle = 1;
+                            self.action("athena-atk");
+                        } else {
+                            self.battle++;
+                            self.combo();
+                        }
                         break;
                 }
                 switch(keyCode) {
@@ -64,7 +102,7 @@ cc.Class({
                         break;
                 }
                 if(self.xSpeed === 0 && self.ySpeed === 0) {
-                    self.action("athena-stand");
+                    //self.action("athena-stand");
                 }
             }
         }, self.node);

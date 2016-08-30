@@ -1,0 +1,38 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "athena-c3",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.8,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "f8229dad-63dd-4e4a-93a6-3c04b0e8b3f4"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "883b2a8e-33b3-47b8-b515-1b6a7e1b8a5f"
+            }
+          },
+          {
+            "frame": 0.7,
+            "value": {
+              "__uuid__": "883b2a8e-33b3-47b8-b515-1b6a7e1b8a5f"
+            }
+          }
+        ]
+      }
+    },
+    "props": {}
+  },
+  "events": []
+}

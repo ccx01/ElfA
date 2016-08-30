@@ -1,0 +1,56 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "athena-c2",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.3,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "cf16595c-2053-4e7e-ac82-13c52ff4c47a"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "191160fa-3407-4325-a2f1-b43111d97700"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "82da065e-172d-491b-9869-ce73b185fa3e"
+            }
+          },
+          {
+            "frame": 0.15,
+            "value": {
+              "__uuid__": "db406222-1b46-4a98-a577-9c9b306c53a2"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "c6c0291e-9e05-4727-895d-f2f30018cc1e"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "0091db29-9d65-4c02-af60-d3a25c120df0"
+            }
+          }
+        ]
+      }
+    },
+    "props": {}
+  },
+  "events": []
+}

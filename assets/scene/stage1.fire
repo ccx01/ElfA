@@ -205,8 +205,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 56,
-      "height": 100
+      "width": 69,
+      "height": 99
     },
     "_children": [],
     "_rotationX": 0,
@@ -215,8 +215,8 @@
     "_scaleY": 2,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -309,
-      "y": -70
+      "x": -298,
+      "y": -69
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -288,6 +288,18 @@
       },
       {
         "__uuid__": "da860f10-46d4-46c0-affe-1705f578f781"
+      },
+      {
+        "__uuid__": "785f3ada-52e9-44c9-abf1-67547cfe92e7"
+      },
+      {
+        "__uuid__": "7fc0bc99-e01f-46dc-bdb0-3dca07f6eccf"
+      },
+      {
+        "__uuid__": "78668575-fa2f-4892-9bea-91286ac7bfbe"
+      },
+      {
+        "__uuid__": "2d8622eb-e68e-46e2-9f02-c906d471c711"
       }
     ],
     "playOnLoad": true
@@ -304,7 +316,8 @@
       "__id__": 7
     },
     "xMaxSpeed": 200,
-    "yMaxSpeed": 100
+    "yMaxSpeed": 100,
+    "comboNext": "0"
   },
   {
     "__type__": "cc.Canvas",

@@ -5,12 +5,33 @@ cc.Class({
         anim: cc.Animation,
         xMaxSpeed: 0,
         yMaxSpeed: 0,
+        comboNext: 0,
     },
     
     action: function (ani) {
         if(!this.anim.currentClip || this.anim.currentClip.name != ani) {
             this.anim.play(ani);
         }
+    },
+
+    actionMove: function(offset) {
+        offset = parseInt(offset);
+        // 动画偏移修正
+        if(this.node.scaleX < 0) {
+            offset *= -1;
+        }
+        this.node.x += offset;
+        console.log(this.node.x)
+    },
+
+    combo: function () {
+        if(this.comboNext === 4) {
+            this.comboNext = 0;
+        }
+        this.action("athena-c" + this.comboNext);
+        this.comboNext++;
+        console.log(this.node.x)
+        // this.action("athena-c1")
     },
 
     setInputControl: function () {
@@ -51,6 +72,7 @@ cc.Class({
                         self.action("athena-walk");
                         break;
                 }
+                self.comboNext = 0;
             },
             onKeyReleased: function(keyCode, event) {
                 switch(keyCode) {
@@ -68,6 +90,46 @@ cc.Class({
                 }
             }
         }, self.node);
+        
+        var Xtouch,Ytouch;
+        var listener = {
+            event: cc.EventListener.TOUCH_ALL_AT_ONCE,
+            onTouchesBegan: function (touches, event) {
+                self.combo()
+                Xtouch = touches[0].getLocationX();
+                Ytouch = touches[0].getLocationY();
+                // self.action("athena-walk");
+                return true;
+            },
+            onTouchesMoved: function (touches, event) {
+
+                if(touches[0].getLocationX() > Xtouch) {
+                    self.xSpeed = self.xMaxSpeed;
+                    self.node.scaleX = 2;
+                } else if(touches[0].getLocationX() < Xtouch) {
+                    self.xSpeed = - self.xMaxSpeed;
+                    self.node.scaleX = -2;
+                }
+
+                if(touches[0].getLocationY() > Ytouch) {
+                    self.ySpeed = self.yMaxSpeed;
+                } else if (touches[0].getLocationY() < Ytouch) {
+                    self.ySpeed = - self.yMaxSpeed;
+                }
+            },
+            /*onTouchesEnded: function (touches, event) {
+                self.xSpeed = 0;
+                self.ySpeed = 0;
+                self.action("athena-stand");
+            },
+            onTouchesCancelled: function (touches, event) {
+                self.xSpeed = 0;
+                self.ySpeed = 0;
+                self.action("athena-stand");
+            }*/
+        }
+        // 绑定多点触摸事件
+        cc.eventManager.addListener(listener, this.node);
     },
     
     // use this for initialization

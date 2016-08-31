@@ -34,5 +34,11 @@
     },
     "props": {}
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0.7,
+      "func": "comboEnd",
+      "params": []
+    }
+  ]
 }

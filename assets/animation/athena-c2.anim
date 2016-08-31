@@ -3,7 +3,7 @@
   "_name": "athena-c2",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.3,
+  "_duration": 0.4,
   "sample": 20,
   "speed": 1,
   "wrapMode": 1,
@@ -42,7 +42,7 @@
             }
           },
           {
-            "frame": 0.25,
+            "frame": 0.35,
             "value": {
               "__uuid__": "0091db29-9d65-4c02-af60-d3a25c120df0"
             }

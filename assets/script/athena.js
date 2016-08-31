@@ -6,6 +6,19 @@ cc.Class({
         xMaxSpeed: 0,
         yMaxSpeed: 0,
         comboNext: 0,
+        state: "stand",
+        controller: {
+            default: null,
+            type: cc.Node
+        },
+        joypadPanel: {
+            default: null,
+            type: cc.Node
+        },
+        joypad: {
+            default: null,
+            type: cc.Node
+        },
     },
     
     action: function (ani) {
@@ -14,65 +27,101 @@ cc.Class({
         }
     },
 
-    actionMove: function(offset) {
-        offset = parseInt(offset);
+    moveOffset: function(offset) {
         // 动画偏移修正
         if(this.node.scaleX < 0) {
             offset *= -1;
         }
         this.node.x += offset;
-        console.log(this.node.x)
     },
 
     combo: function () {
+        this.statePool("combo" + this.comboNext);
+        this.comboNext ++;
         if(this.comboNext === 4) {
             this.comboNext = 0;
         }
-        this.action("athena-c" + this.comboNext);
-        this.comboNext++;
-        console.log(this.node.x)
-        // this.action("athena-c1")
+    },
+
+    comboEnd: function () {
+        this.comboNext = 0;
+        this.statePool("stand");
+    },
+
+    commandPool: function () {
+        // 指令池
+
+    },
+
+    statePool: function(s) {
+        if(this.state == s) return;
+        // 状态池
+        this.state = s;
+        if(!this.anim.getAnimationState("athena-c0").isPlaying) {
+            this.comboNext = 0;
+            this.anim.play("athena-stand");
+        }
+        switch(s) {
+            case "combo0":
+                this.anim.play("athena-c0");
+            break;
+            case "combo1":
+                this.anim.play("athena-c1");
+            break;
+            case "combo2":
+                this.anim.play("athena-c2");
+            break;
+            case "combo3":
+                this.anim.play("athena-c3");
+            break;
+            case "walk":
+                if(this.comboNext == 0)
+                this.anim.play("athena-walk");
+            break;
+            case "stand":
+            default:
+                if(this.comboNext == 0)
+                this.anim.play("athena-stand");
+        }
     },
 
     setInputControl: function () {
+
         var self = this;
+
+        var controller = this.controller;
+
+        var joypad = this.joypad;
+        var joypadPanel = this.joypadPanel;
+        var walk = false;
         // 添加键盘事件监听
         cc.eventManager.addListener({
             event: cc.EventListener.KEYBOARD,
-            // 有按键按下时，判断是否是我们指定的方向控制键，并设置向对应方向加速
             onKeyPressed: function(keyCode, event) {
-                switch(keyCode) {
-                    case cc.KEY.j:
-                        self.xSpeed = 0;
-                        self.ySpeed = 0;
-                        self.action("athena-atk");
-                        break;
-                }
                 switch(keyCode) {
                     case cc.KEY.a:
                         self.xSpeed = - self.xMaxSpeed;
-                        self.action("athena-walk");
+                        self.statePool("walk");
                         if(self.node.scaleX > 0) {
                             self.node.scaleX *= -1;
                         }
                         break;
                     case cc.KEY.d:
                         self.xSpeed = self.xMaxSpeed;
-                        self.action("athena-walk");
+                        self.statePool("walk");
                         if(self.node.scaleX < 0) {
                             self.node.scaleX *= -1;
                         }
                         break;
                     case cc.KEY.w:
                         self.ySpeed = self.yMaxSpeed;
-                        self.action("athena-walk");
+                        self.statePool("walk");
                         break;
                     case cc.KEY.s:
                         self.ySpeed = - self.yMaxSpeed;
-                        self.action("athena-walk");
+                        self.statePool("walk");
                         break;
                 }
-                self.comboNext = 0;
             },
             onKeyReleased: function(keyCode, event) {
                 switch(keyCode) {
@@ -92,44 +141,60 @@ cc.Class({
         }, self.node);
         
         var Xtouch,Ytouch;
+        var XtouchMove,YtouchMove;
         var listener = {
             event: cc.EventListener.TOUCH_ALL_AT_ONCE,
             onTouchesBegan: function (touches, event) {
-                self.combo()
+                // self.combo()
                 Xtouch = touches[0].getLocationX();
                 Ytouch = touches[0].getLocationY();
-                // self.action("athena-walk");
+
+                if(Xtouch > 80 && Xtouch < 220 && Ytouch > 50 && Ytouch < 190) {
+                    // 摇杆
+                    walk = true;
+                    joypadPanel.x = Xtouch;
+                    joypadPanel.y = Ytouch;
+                }
+
                 return true;
             },
             onTouchesMoved: function (touches, event) {
-
-                if(touches[0].getLocationX() > Xtouch) {
+                if(!walk) return;
+                self.statePool("walk");
+                XtouchMove = touches[0].getLocationX();
+                YtouchMove = touches[0].getLocationY();
+                if(XtouchMove > Xtouch) {
                     self.xSpeed = self.xMaxSpeed;
                     self.node.scaleX = 2;
-                } else if(touches[0].getLocationX() < Xtouch) {
+                } else if(XtouchMove < Xtouch) {
                     self.xSpeed = - self.xMaxSpeed;
                     self.node.scaleX = -2;
                 }
 
-                if(touches[0].getLocationY() > Ytouch) {
+                if(YtouchMove > Ytouch) {
                     self.ySpeed = self.yMaxSpeed;
-                } else if (touches[0].getLocationY() < Ytouch) {
+                } else if (YtouchMove < Ytouch) {
                     self.ySpeed = - self.yMaxSpeed;
                 }
+
+                joypad.x = Math.min(40, Math.max((XtouchMove - Xtouch) * 0.5, -40));
+                joypad.y = Math.min(40, Math.max((YtouchMove - Ytouch) * 0.5, -40));
             },
-            /*onTouchesEnded: function (touches, event) {
+            onTouchesEnded: function (touches, event) {
                 self.xSpeed = 0;
                 self.ySpeed = 0;
-                self.action("athena-stand");
+                self.statePool("stand");
+                walk = false;
             },
             onTouchesCancelled: function (touches, event) {
                 self.xSpeed = 0;
                 self.ySpeed = 0;
-                self.action("athena-stand");
-            }*/
+                self.statePool("stand");
+                walk = false;
+            }
         }
         // 绑定多点触摸事件
-        cc.eventManager.addListener(listener, this.node);
+        cc.eventManager.addListener(listener, joypadPanel);
     },
     
     // use this for initialization
@@ -143,7 +208,9 @@ cc.Class({
     // called every frame, uncomment this function to activate update callback
     
     update: function (dt) {
-        this.node.x += this.xSpeed * dt;
-        this.node.y += this.ySpeed * dt;
+        if(this.comboNext == 0) {
+            this.node.x += this.xSpeed * dt;
+            this.node.y += this.ySpeed * dt;
+        }
     },
 });

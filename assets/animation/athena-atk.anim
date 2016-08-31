@@ -253,7 +253,100 @@
           }
         ]
       }
-    }
+    },
+    "props": {}
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0.2,
+      "func": "pause",
+      "params": []
+    },
+    {
+      "frame": 0.4,
+      "func": "moveOffset",
+      "params": [
+        40
+      ]
+    },
+    {
+      "frame": 0.55,
+      "func": "pause",
+      "params": []
+    },
+    {
+      "frame": 0.8,
+      "func": "moveOffset",
+      "params": [
+        40
+      ]
+    },
+    {
+      "frame": 0.85,
+      "func": "pause",
+      "params": []
+    },
+    {
+      "frame": 0.95,
+      "func": "moveOffset",
+      "params": [
+        20
+      ]
+    },
+    {
+      "frame": 1,
+      "func": "pause",
+      "params": []
+    },
+    {
+      "frame": 1.15,
+      "func": "pause",
+      "params": []
+    },
+    {
+      "frame": 1.15,
+      "func": "moveOffset",
+      "params": [
+        10
+      ]
+    },
+    {
+      "frame": 1.35,
+      "func": "moveOffset",
+      "params": [
+        40
+      ]
+    },
+    {
+      "frame": 1.5,
+      "func": "pause",
+      "params": []
+    },
+    {
+      "frame": 1.5,
+      "func": "moveOffset",
+      "params": [
+        20
+      ]
+    },
+    {
+      "frame": 1.65,
+      "func": "pause",
+      "params": []
+    },
+    {
+      "frame": 1.9,
+      "func": "moveOffset",
+      "params": [
+        20
+      ]
+    },
+    {
+      "frame": 1.95,
+      "func": "moveOffset",
+      "params": [
+        40
+      ]
+    }
+  ]
 }

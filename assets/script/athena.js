@@ -50,6 +50,8 @@ cc.Class({
     skill: function () {
         // 技能指令
         if(this.comboLock) return;
+        this.xSpeed = 0;
+        this.ySpeed = 0;
         if(this.skillPool.length > 0) {
             this.canMove = false;
             this.comboLock = true;
@@ -161,6 +163,57 @@ cc.Class({
         var XtouchMove,YtouchMove;
         var xs, ys;
         var listener = {
+            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+            onTouchBegan: function (touch, event) {
+                Xtouch = touch.getLocationX();
+                Ytouch = touch.getLocationY();
+
+                if(Xtouch > 0 && Xtouch < 300 && Ytouch > 0 && Ytouch < 300) {
+                    // 摇杆
+                    mousemove = true;
+                    joypadPanel.x = Xtouch;
+                    joypadPanel.y = Ytouch;
+                }
+
+                return true;
+            },
+            onTouchMoved: function (touch, event) {
+                if(!mousemove) return;
+                XtouchMove = touch.getLocationX();
+                YtouchMove = touch.getLocationY();
+                if(XtouchMove > Xtouch) {
+                    xs = self.xMaxSpeed;
+                } else if(XtouchMove < Xtouch) {
+                    xs = - self.xMaxSpeed;
+                }
+
+                if(YtouchMove > Ytouch) {
+                    ys = self.yMaxSpeed;
+                } else if (YtouchMove < Ytouch) {
+                    ys = - self.yMaxSpeed;
+                }
+
+                xs = xs || 0;
+                ys = ys || 0;
+                self.move(xs, ys);
+
+                joypad.x = Math.min(40, Math.max((XtouchMove - Xtouch) * 0.5, -40));
+                joypad.y = Math.min(40, Math.max((YtouchMove - Ytouch) * 0.5, -40));
+            },
+            onTouchEnded: function (touch, event) {
+                self.move(0, 0);
+                mousemove = false;
+            },
+            onTouchCancelled: function (touch, event) {
+                self.move(0, 0);
+                mousemove = false;
+            },
+        }
+        // 绑定单点触摸事件
+        cc.eventManager.addListener(listener, this.node);
+
+
+        /*var listener = {
             event: cc.EventListener.TOUCH_ALL_AT_ONCE,
             onTouchesBegan: function (touches, event) {
                 // self.combo()
@@ -208,8 +261,7 @@ cc.Class({
                 mousemove = false;
             }
         }
-        // 绑定多点触摸事件
-        cc.eventManager.addListener(listener, joypadPanel);
+        cc.eventManager.addListener(listener, joypadPanel);*/
     },
     
     // use this for initialization

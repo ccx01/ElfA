@@ -320,8 +320,11 @@
     },
     "xMaxSpeed": 200,
     "yMaxSpeed": 100,
+    "canMove": true,
     "comboNext": "0",
+    "comboLock": false,
     "state": "stand",
+    "skillPool": [],
     "controller": {
       "__id__": 9
     },
@@ -778,8 +781,8 @@
       "width": 960,
       "height": 640
     },
-    "_fitWidth": false,
-    "_fitHeight": false
+    "_fitWidth": true,
+    "_fitHeight": true
   },
   {
     "__type__": "f9bc2XoIP9IyJguRRKMcXjs",

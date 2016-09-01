@@ -5,8 +5,11 @@ cc.Class({
         anim: cc.Animation,
         xMaxSpeed: 0,
         yMaxSpeed: 0,
+        canMove: true,
         comboNext: 0,
+        comboLock: false,
         state: "stand",
+        skillPool: [],
         controller: {
             default: null,
             type: cc.Node
@@ -20,12 +23,6 @@ cc.Class({
             type: cc.Node
         },
     },
-    
-    action: function (ani) {
-        if(!this.anim.currentClip || this.anim.currentClip.name != ani) {
-            this.anim.play(ani);
-        }
-    },
 
     moveOffset: function(offset) {
         // 动画偏移修正
@@ -36,31 +33,61 @@ cc.Class({
     },
 
     combo: function () {
-        this.statePool("combo" + this.comboNext);
-        this.comboNext ++;
+        // 指令输入
+        this.skillPool.push("combo" + this.comboNext);
+
+        this.comboNext++;
         if(this.comboNext === 4) {
             this.comboNext = 0;
         }
+        this.skill();
     },
 
     comboEnd: function () {
-        this.comboNext = 0;
-        this.statePool("stand");
+        this.skillPool = [];
     },
 
-    commandPool: function () {
-        // 指令池
+    skill: function () {
+        // 技能指令
+        if(this.comboLock) return;
+        if(this.skillPool.length > 0) {
+            this.canMove = false;
+            this.comboLock = true;
+            this.statePool(this.skillPool[0]);
+            this.skillPool.shift();
+        } else {
+            this.canMove = true;
+            this.comboNext = 0;
+            this.comboLock = false;
+            this.statePool("stand");
+        }
+    },
 
+    move: function(xs, ys) {
+        // 移动指令
+        if(this.canMove) {
+            this.xSpeed = xs;
+            this.ySpeed = ys;
+            if(xs == 0 && ys == 0) {
+                this.statePool("stand");
+            } else {
+                if(xs > 0) {
+                    this.node.scaleX = Math.abs(this.node.scaleX);
+                } else {
+                    this.node.scaleX = -Math.abs(this.node.scaleX);
+                }
+                this.statePool("walk");
+            }
+        } else {
+            this.xSpeed = 0;
+            this.ySpeed = 0;
+        }
     },
 
     statePool: function(s) {
         if(this.state == s) return;
         // 状态池
         this.state = s;
-        if(!this.anim.getAnimationState("athena-c0").isPlaying) {
-            this.comboNext = 0;
-            this.anim.play("athena-stand");
-        }
         switch(s) {
             case "combo0":
                 this.anim.play("athena-c0");
@@ -74,26 +101,27 @@ cc.Class({
             case "combo3":
                 this.anim.play("athena-c3");
             break;
+            case "stand":
+                this.anim.play("athena-stand");
+            break;
             case "walk":
-                if(this.comboNext == 0)
                 this.anim.play("athena-walk");
             break;
-            case "stand":
-            default:
-                if(this.comboNext == 0)
-                this.anim.play("athena-stand");
         }
     },
 
-    setInputControl: function () {
+    stateBuffer: function() {
+        // 状态缓冲区
+    },
 
+    setInputControl: function () {
         var self = this;
 
         var controller = this.controller;
 
         var joypad = this.joypad;
         var joypadPanel = this.joypadPanel;
-        var walk = false;
+        var mousemove = false;
         // 添加键盘事件监听
         cc.eventManager.addListener({
             event: cc.EventListener.KEYBOARD,
@@ -101,27 +129,18 @@ cc.Class({
                 switch(keyCode) {
                     case cc.KEY.a:
                         self.xSpeed = - self.xMaxSpeed;
-                        self.statePool("walk");
-                        if(self.node.scaleX > 0) {
-                            self.node.scaleX *= -1;
-                        }
                         break;
                     case cc.KEY.d:
                         self.xSpeed = self.xMaxSpeed;
-                        self.statePool("walk");
-                        if(self.node.scaleX < 0) {
-                            self.node.scaleX *= -1;
-                        }
                         break;
                     case cc.KEY.w:
                         self.ySpeed = self.yMaxSpeed;
-                        self.statePool("walk");
                         break;
                     case cc.KEY.s:
                         self.ySpeed = - self.yMaxSpeed;
-                        self.statePool("walk");
                         break;
                 }
+                self.move(self.xSpeed, self.ySpeed);
             },
             onKeyReleased: function(keyCode, event) {
                 switch(keyCode) {
@@ -134,14 +153,13 @@ cc.Class({
                         self.ySpeed = 0;
                         break;
                 }
-                if(self.xSpeed === 0 && self.ySpeed === 0) {
-                    self.action("athena-stand");
-                }
+                self.move(self.xSpeed, self.ySpeed);
             }
         }, self.node);
         
         var Xtouch,Ytouch;
         var XtouchMove,YtouchMove;
+        var xs, ys;
         var listener = {
             event: cc.EventListener.TOUCH_ALL_AT_ONCE,
             onTouchesBegan: function (touches, event) {
@@ -149,9 +167,9 @@ cc.Class({
                 Xtouch = touches[0].getLocationX();
                 Ytouch = touches[0].getLocationY();
 
-                if(Xtouch > 80 && Xtouch < 220 && Ytouch > 50 && Ytouch < 190) {
+                if(Xtouch > 0 && Xtouch < 300 && Ytouch > 0 && Ytouch < 300) {
                     // 摇杆
-                    walk = true;
+                    mousemove = true;
                     joypadPanel.x = Xtouch;
                     joypadPanel.y = Ytouch;
                 }
@@ -159,38 +177,35 @@ cc.Class({
                 return true;
             },
             onTouchesMoved: function (touches, event) {
-                if(!walk) return;
-                self.statePool("walk");
+                if(!mousemove) return;
                 XtouchMove = touches[0].getLocationX();
                 YtouchMove = touches[0].getLocationY();
                 if(XtouchMove > Xtouch) {
-                    self.xSpeed = self.xMaxSpeed;
-                    self.node.scaleX = 2;
+                    xs = self.xMaxSpeed;
                 } else if(XtouchMove < Xtouch) {
-                    self.xSpeed = - self.xMaxSpeed;
-                    self.node.scaleX = -2;
+                    xs = - self.xMaxSpeed;
                 }
 
                 if(YtouchMove > Ytouch) {
-                    self.ySpeed = self.yMaxSpeed;
+                    ys = self.yMaxSpeed;
                 } else if (YtouchMove < Ytouch) {
-                    self.ySpeed = - self.yMaxSpeed;
+                    ys = - self.yMaxSpeed;
                 }
+
+                xs = xs || 0;
+                ys = ys || 0;
+                self.move(xs, ys);
 
                 joypad.x = Math.min(40, Math.max((XtouchMove - Xtouch) * 0.5, -40));
                 joypad.y = Math.min(40, Math.max((YtouchMove - Ytouch) * 0.5, -40));
             },
             onTouchesEnded: function (touches, event) {
-                self.xSpeed = 0;
-                self.ySpeed = 0;
-                self.statePool("stand");
-                walk = false;
+                self.move(0, 0);
+                mousemove = false;
             },
             onTouchesCancelled: function (touches, event) {
-                self.xSpeed = 0;
-                self.ySpeed = 0;
-                self.statePool("stand");
-                walk = false;
+                self.move(0, 0);
+                mousemove = false;
             }
         }
         // 绑定多点触摸事件
@@ -203,14 +218,17 @@ cc.Class({
         this.ySpeed = 0;
         // 初始化键盘输入监听
         this.setInputControl();
+
+        this.anim.on('finished',  function() {
+            this.comboLock = false;
+            this.skill();
+        }, this);
     },
 
     // called every frame, uncomment this function to activate update callback
     
     update: function (dt) {
-        if(this.comboNext == 0) {
-            this.node.x += this.xSpeed * dt;
-            this.node.y += this.ySpeed * dt;
-        }
+        this.node.x += this.xSpeed * dt;
+        this.node.y += this.ySpeed * dt;
     },
 });

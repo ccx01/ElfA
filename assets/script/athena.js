@@ -165,6 +165,7 @@ cc.Class({
         var listener = {
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
             onTouchBegan: function (touch, event) {
+                if(mousemove) return;
                 Xtouch = touch.getLocationX();
                 Ytouch = touch.getLocationY();
 

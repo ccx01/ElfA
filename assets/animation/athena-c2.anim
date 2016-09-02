@@ -52,5 +52,16 @@
     },
     "props": {}
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0,
+      "func": "skillStart",
+      "params": []
+    },
+    {
+      "frame": 0.35,
+      "func": "skillEnd",
+      "params": []
+    }
+  ]
 }

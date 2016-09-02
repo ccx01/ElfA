@@ -36,8 +36,18 @@
   },
   "events": [
     {
+      "frame": 0,
+      "func": "skillStart",
+      "params": []
+    },
+    {
       "frame": 0.7,
       "func": "comboEnd",
+      "params": []
+    },
+    {
+      "frame": 0.7,
+      "func": "skillEnd",
       "params": []
     }
   ]

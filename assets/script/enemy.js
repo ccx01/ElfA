@@ -10,18 +10,6 @@ cc.Class({
         comboLock: false,
         state: "stand",
         skillPool: [],
-        controller: {
-            default: null,
-            type: cc.Node
-        },
-        joypadPanel: {
-            default: null,
-            type: cc.Node
-        },
-        joypad: {
-            default: null,
-            type: cc.Node
-        },
     },
 
     moveOffset: function(offset) {
@@ -119,10 +107,6 @@ cc.Class({
     setInputControl: function () {
         var self = this;
 
-        var controller = this.controller;
-
-        var joypad = this.joypad;
-        var joypadPanel = this.joypadPanel;
         var mousemove = false;
         // 添加键盘事件监听
         cc.eventManager.addListener({
@@ -168,14 +152,6 @@ cc.Class({
                 if(mousemove) return;
                 Xtouch = touch.getLocationX();
                 Ytouch = touch.getLocationY();
-
-                if(Xtouch > 0 && Xtouch < 300 && Ytouch > 0 && Ytouch < 300) {
-                    // 摇杆
-                    mousemove = true;
-                    joypadPanel.x = Xtouch;
-                    joypadPanel.y = Ytouch;
-                }
-
                 return true;
             },
             onTouchMoved: function (touch, event) {
@@ -197,9 +173,6 @@ cc.Class({
                 xs = xs || 0;
                 ys = ys || 0;
                 self.move(xs, ys);
-
-                joypad.x = Math.min(40, Math.max((XtouchMove - Xtouch) * 0.5, -40));
-                joypad.y = Math.min(40, Math.max((YtouchMove - Ytouch) * 0.5, -40));
             },
             onTouchEnded: function (touch, event) {
                 self.move(0, 0);
@@ -269,8 +242,6 @@ cc.Class({
     onLoad: function () {
         this.xSpeed = 0;
         this.ySpeed = 0;
-        // 初始化键盘输入监听
-        this.setInputControl();
 
         this.anim.on('finished',  function() {
             this.comboLock = false;
@@ -283,5 +254,6 @@ cc.Class({
     update: function (dt) {
         this.node.x += this.xSpeed * dt;
         this.node.y += this.ySpeed * dt;
+        this.node.zIndex = 1000 - this.node.y;
     },
 });

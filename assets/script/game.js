@@ -12,9 +12,17 @@ cc.Class({
         },
     },
 
+    enemyShow: function() {
+        // 使用给定的模板在场景中生成一个新节点
+        var newEnemy = cc.instantiate(this.enemyPrefab);
+        // 将新增的节点添加到 Canvas 节点下面
+        this.node.addChild(newEnemy);
+        // 为星星设置一个随机位置
+        newEnemy.setPosition(100, -60);
+    },
     // use this for initialization
     onLoad: function () {
-
+        this.enemyShow();
     },
 
     // called every frame, uncomment this function to activate update callback

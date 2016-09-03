@@ -4,1656 +4,1318 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>athena002.gif</key>
+            <key>athena001.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{348,326},{75,99}}</string>
+                <string>{{308,460},{54,96}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{5,-9}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{78,36},{54,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena002.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{234,876},{46,96}}</string>
+                <key>offset</key>
+                <string>{4,-9}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{81,36},{46,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena003.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{328,358},{46,96}}</string>
+                <key>offset</key>
+                <string>{5,-9}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{82,36},{46,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena004.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{324,558},{76,94}}</string>
+                <key>offset</key>
+                <string>{9,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,38},{76,94}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena005.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{418,2},{74,96}}</string>
+                <key>offset</key>
+                <string>{8,-9}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,36},{74,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena006.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{194,110},{50,100}}</string>
+                <key>offset</key>
+                <string>{4,-6}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{79,31},{50,100}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena007.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{250,462},{56,100}}</string>
+                <key>offset</key>
+                <string>{7,-6}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{79,31},{56,100}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena008.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{322,2},{96,94}}</string>
+                <key>offset</key>
+                <string>{29,-10}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{75,99}}</string>
+                <string>{{81,38},{96,94}}</string>
                 <key>sourceSize</key>
-                <string>{75,99}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena003.gif</key>
+            <key>athena009.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{305,610},{75,97}}</string>
+                <string>{{246,102},{96,94}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{75,97}}</string>
-                <key>sourceSize</key>
-                <string>{75,97}</string>
-            </dict>
-            <key>athena004.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{476,401},{74,95}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{74,95}}</string>
-                <key>sourceSize</key>
-                <string>{74,95}</string>
-            </dict>
-            <key>athena005.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{610,2},{73,94}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{73,94}}</string>
-                <key>sourceSize</key>
-                <string>{73,94}</string>
-            </dict>
-            <key>athena006.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{522,498},{73,95}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{73,95}}</string>
-                <key>sourceSize</key>
-                <string>{73,95}</string>
-            </dict>
-            <key>athena007.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{310,504},{74,97}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{74,97}}</string>
-                <key>sourceSize</key>
-                <string>{74,97}</string>
-            </dict>
-            <key>athena008.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{248,716},{74,98}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{74,98}}</string>
-                <key>sourceSize</key>
-                <string>{74,98}</string>
-            </dict>
-            <key>athena009.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{277,914},{57,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{57,96}}</string>
-                <key>sourceSize</key>
-                <string>{57,96}</string>
-            </dict>
-            <key>athena011.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{277,914},{57,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{57,96}}</string>
-                <key>sourceSize</key>
-                <string>{57,96}</string>
-            </dict>
-            <key>athena012.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{548,2},{60,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{60,96}}</string>
-                <key>sourceSize</key>
-                <string>{60,96}</string>
-            </dict>
-            <key>athena013.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{548,2},{60,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{60,96}}</string>
-                <key>sourceSize</key>
-                <string>{60,96}</string>
-            </dict>
-            <key>athena014.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{548,2},{60,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{60,96}}</string>
-                <key>sourceSize</key>
-                <string>{60,96}</string>
-            </dict>
-            <key>athena015.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{552,401},{66,95}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{66,95}}</string>
-                <key>sourceSize</key>
-                <string>{66,95}</string>
-            </dict>
-            <key>athena016.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{552,401},{66,95}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{66,95}}</string>
-                <key>sourceSize</key>
-                <string>{66,95}</string>
-            </dict>
-            <key>athena017.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{552,401},{66,95}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{66,95}}</string>
-                <key>sourceSize</key>
-                <string>{66,95}</string>
-            </dict>
-            <key>athena018.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{753,2},{72,89}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{72,89}}</string>
-                <key>sourceSize</key>
-                <string>{72,89}</string>
-            </dict>
-            <key>athena019.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{382,603},{58,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{58,96}}</string>
-                <key>sourceSize</key>
-                <string>{58,96}</string>
-            </dict>
-            <key>athena020.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{382,603},{58,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{58,96}}</string>
-                <key>sourceSize</key>
-                <string>{58,96}</string>
-            </dict>
-            <key>athena033.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{603,592},{79,88}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{79,88}}</string>
-                <key>sourceSize</key>
-                <string>{79,88}</string>
-            </dict>
-            <key>athena036.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,971},{99,51}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{99,51}}</string>
-                <key>sourceSize</key>
-                <string>{99,51}</string>
-            </dict>
-            <key>athena039.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{345,2},{103,48}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
+                <string>{28,-10}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{103,48}}</string>
+                <string>{{80,38},{96,94}}</string>
                 <key>sourceSize</key>
-                <string>{103,48}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena045.gif</key>
+            <key>athena010.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{386,501},{96,58}}</string>
+                <string>{{282,876},{80,94}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{20,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{80,38},{80,94}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena011.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{196,568},{70,100}}</string>
+                <key>offset</key>
+                <string>{13,-7}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{78,32},{70,100}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena012.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{262,670},{56,96}}</string>
+                <key>offset</key>
+                <string>{-1,-9}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,36},{56,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena013.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{222,312},{46,96}}</string>
+                <key>offset</key>
+                <string>{3,-11}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{96,58}}</string>
+                <string>{{80,38},{46,96}}</string>
                 <key>sourceSize</key>
-                <string>{96,58}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena051.gif</key>
+            <key>athena014.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{170,840},{103,32}}</string>
+                <string>{{400,654},{66,92}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{12,-11}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{79,40},{66,92}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena015.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{402,552},{64,92}}</string>
+                <key>offset</key>
+                <string>{11,-11}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{79,40},{64,92}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena016.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{222,312},{46,96}}</string>
+                <key>offset</key>
+                <string>{3,-11}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{103,32}}</string>
+                <string>{{80,38},{46,96}}</string>
                 <key>sourceSize</key>
-                <string>{103,32}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena054.gif</key>
+            <key>athena017.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,403},{117,28}}</string>
+                <string>{{308,460},{54,96}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{2,-11}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{75,38},{54,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena018.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{262,670},{56,96}}</string>
+                <key>offset</key>
+                <string>{-1,-9}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,36},{56,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena019.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{222,312},{46,96}}</string>
+                <key>offset</key>
+                <string>{3,-11}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{117,28}}</string>
+                <string>{{80,38},{46,96}}</string>
                 <key>sourceSize</key>
-                <string>{117,28}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena083.gif</key>
+            <key>athena020.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{739,98},{90,37}}</string>
+                <string>{{108,2},{108,80}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{35,-18}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{90,37}}</string>
+                <string>{{81,53},{108,80}}</string>
                 <key>sourceSize</key>
-                <string>{90,37}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena084.gif</key>
+            <key>athena021.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{543,790},{64,57}}</string>
+                <string>{{2,690},{104,80}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{34,-18}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{64,57}}</string>
+                <string>{{82,53},{104,80}}</string>
                 <key>sourceSize</key>
-                <string>{64,57}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena086.gif</key>
+            <key>athena022.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{519,960},{67,62}}</string>
+                <string>{{222,312},{46,96}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{67,62}}</string>
-                <key>sourceSize</key>
-                <string>{67,62}</string>
-            </dict>
-            <key>athena10.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{277,914},{57,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{57,96}}</string>
-                <key>sourceSize</key>
-                <string>{57,96}</string>
-            </dict>
-            <key>athena113.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{778,93},{66,78}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{66,78}}</string>
-                <key>sourceSize</key>
-                <string>{66,78}</string>
-            </dict>
-            <key>athena114.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{56,364},{37,104}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
+                <string>{3,-11}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{37,104}}</string>
+                <string>{{80,38},{46,96}}</string>
                 <key>sourceSize</key>
-                <string>{37,104}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena115.gif</key>
+            <key>athena023.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{52,749},{54,105}}</string>
+                <string>{{308,460},{54,96}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{2,-11}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{54,105}}</string>
+                <string>{{75,38},{54,96}}</string>
                 <key>sourceSize</key>
-                <string>{54,105}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena116.gif</key>
+            <key>athena024.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{142,514},{55,104}}</string>
+                <string>{{136,686},{48,102}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{5,-12}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{55,104}}</string>
+                <string>{{81,36},{48,102}}</string>
                 <key>sourceSize</key>
-                <string>{55,104}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena117.gif</key>
+            <key>athena025.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{103,962},{60,104}}</string>
+                <string>{{2,362},{110,100}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{60,104}}</string>
-                <key>sourceSize</key>
-                <string>{60,104}</string>
-            </dict>
-            <key>athena118.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{168,403},{54,104}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{54,104}}</string>
-                <key>sourceSize</key>
-                <string>{54,104}</string>
-            </dict>
-            <key>athena119.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{108,734},{45,104}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{45,104}}</string>
-                <key>sourceSize</key>
-                <string>{45,104}</string>
-            </dict>
-            <key>athena120.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{52,856},{34,105}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{34,105}}</string>
-                <key>sourceSize</key>
-                <string>{34,105}</string>
-            </dict>
-            <key>athena121.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{160,620},{40,104}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{40,104}}</string>
-                <key>sourceSize</key>
-                <string>{40,104}</string>
-            </dict>
-            <key>athena122.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{224,403},{56,103}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{56,103}}</string>
-                <key>sourceSize</key>
-                <string>{56,103}</string>
-            </dict>
-            <key>athena123.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{308,221},{55,103}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{55,103}}</string>
-                <key>sourceSize</key>
-                <string>{55,103}</string>
-            </dict>
-            <key>athena124.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{328,111},{50,103}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{50,103}}</string>
-                <key>sourceSize</key>
-                <string>{50,103}</string>
-            </dict>
-            <key>athena125.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{155,734},{41,104}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{41,104}}</string>
-                <key>sourceSize</key>
-                <string>{41,104}</string>
-            </dict>
-            <key>athena136.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{659,488},{55,87}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{55,87}}</string>
-                <key>sourceSize</key>
-                <string>{55,87}</string>
-            </dict>
-            <key>athena137.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{827,2},{55,74}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{55,74}}</string>
-                <key>sourceSize</key>
-                <string>{55,74}</string>
-            </dict>
-            <key>athena138.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{659,488},{55,87}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{55,87}}</string>
-                <key>sourceSize</key>
-                <string>{55,87}</string>
-            </dict>
-            <key>athena139.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{293,2},{50,107}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{50,107}}</string>
-                <key>sourceSize</key>
-                <string>{50,107}</string>
-            </dict>
-            <key>athena140.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{54,131},{45,118}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{45,118}}</string>
-                <key>sourceSize</key>
-                <string>{45,118}</string>
-            </dict>
-            <key>athena143.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{392,905},{47,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{47,96}}</string>
-                <key>sourceSize</key>
-                <string>{47,96}</string>
-            </dict>
-            <key>athena144.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{259,333},{87,68}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,68}}</string>
-                <key>sourceSize</key>
-                <string>{87,68}</string>
-            </dict>
-            <key>athena145.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{282,403},{99,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
+                <string>{26,-13}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{99,96}}</string>
+                <string>{{71,38},{110,100}}</string>
                 <key>sourceSize</key>
-                <string>{99,96}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena146.gif</key>
+            <key>athena026.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{293,2},{50,107}}</string>
+                <string>{{136,686},{48,102}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{5,-12}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{50,107}}</string>
+                <string>{{81,36},{48,102}}</string>
                 <key>sourceSize</key>
-                <string>{50,107}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena147.gif</key>
+            <key>athena027.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{54,131},{45,118}}</string>
+                <string>{{234,974},{46,94}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{45,118}}</string>
-                <key>sourceSize</key>
-                <string>{45,118}</string>
-            </dict>
-            <key>athena150.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{677,196},{88,90}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{88,90}}</string>
-                <key>sourceSize</key>
-                <string>{88,90}</string>
-            </dict>
-            <key>athena151.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{620,394},{58,92}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{58,92}}</string>
-                <key>sourceSize</key>
-                <string>{58,92}</string>
-            </dict>
-            <key>athena152.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{680,385},{85,86}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{85,86}}</string>
-                <key>sourceSize</key>
-                <string>{85,86}</string>
-            </dict>
-            <key>athena153.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{469,103},{79,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{79,96}}</string>
-                <key>sourceSize</key>
-                <string>{79,96}</string>
-            </dict>
-            <key>athena154.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{654,292},{61,91}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{61,91}}</string>
-                <key>sourceSize</key>
-                <string>{61,91}</string>
-            </dict>
-            <key>athena155.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{535,696},{92,80}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
+                <string>{9,-12}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{92,80}}</string>
+                <string>{{86,40},{46,94}}</string>
                 <key>sourceSize</key>
-                <string>{92,80}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena156.gif</key>
+            <key>athena028.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{449,317},{58,82}}</string>
+                <string>{{234,778},{64,96}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{3,-9}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{58,82}}</string>
+                <string>{{71,36},{64,96}}</string>
                 <key>sourceSize</key>
-                <string>{58,82}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena184.gif</key>
+            <key>athena029.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{110,2},{77,109}}</string>
+                <string>{{150,572},{44,102}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{1,-4}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{77,109}}</string>
+                <string>{{79,28},{44,102}}</string>
                 <key>sourceSize</key>
-                <string>{77,109}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena185.gif</key>
+            <key>athena030.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{32,403},{84,112}}</string>
+                <string>{{158,466},{100,90}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{84,112}}</string>
-                <key>sourceSize</key>
-                <string>{84,112}</string>
-            </dict>
-            <key>athena186.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,522},{88,114}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{88,114}}</string>
-                <key>sourceSize</key>
-                <string>{88,114}</string>
-            </dict>
-            <key>athena187.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{52,2},{56,127}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{56,127}}</string>
-                <key>sourceSize</key>
-                <string>{56,127}</string>
-            </dict>
-            <key>athena188.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,140},{50,134}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{50,134}}</string>
-                <key>sourceSize</key>
-                <string>{50,134}</string>
-            </dict>
-            <key>athena189.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,2},{48,136}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,136}}</string>
-                <key>sourceSize</key>
-                <string>{48,136}</string>
-            </dict>
-            <key>athena190.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{241,2},{50,108}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{50,108}}</string>
-                <key>sourceSize</key>
-                <string>{50,108}</string>
-            </dict>
-            <key>athena191.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{189,2},{50,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{50,109}}</string>
-                <key>sourceSize</key>
-                <string>{50,109}</string>
-            </dict>
-            <key>athena192.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{203,113},{48,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,109}}</string>
-                <key>sourceSize</key>
-                <string>{48,109}</string>
-            </dict>
-            <key>athena193.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{177,243},{48,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,109}}</string>
-                <key>sourceSize</key>
-                <string>{48,109}</string>
-            </dict>
-            <key>athena194.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{118,403},{48,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,109}}</string>
-                <key>sourceSize</key>
-                <string>{48,109}</string>
-            </dict>
-            <key>athena195.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{92,517},{48,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,109}}</string>
-                <key>sourceSize</key>
-                <string>{48,109}</string>
-            </dict>
-            <key>athena196.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{52,638},{48,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,109}}</string>
-                <key>sourceSize</key>
-                <string>{48,109}</string>
-            </dict>
-            <key>athena197.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,860},{48,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,109}}</string>
-                <key>sourceSize</key>
-                <string>{48,109}</string>
-            </dict>
-            <key>athena198.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,749},{48,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,109}}</string>
-                <key>sourceSize</key>
-                <string>{48,109}</string>
-            </dict>
-            <key>athena199.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,638},{48,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,109}}</string>
-                <key>sourceSize</key>
-                <string>{48,109}</string>
-            </dict>
-            <key>athena200.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{118,403},{48,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,109}}</string>
-                <key>sourceSize</key>
-                <string>{48,109}</string>
-            </dict>
-            <key>athena201.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{118,403},{48,109}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{48,109}}</string>
-                <key>sourceSize</key>
-                <string>{48,109}</string>
-            </dict>
-            <key>athena261.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{336,905},{54,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{54,96}}</string>
-                <key>sourceSize</key>
-                <string>{54,96}</string>
-            </dict>
-            <key>athena262.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{441,701},{45,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{45,96}}</string>
-                <key>sourceSize</key>
-                <string>{45,96}</string>
-            </dict>
-            <key>athena263.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{162,355},{46,95}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
+                <string>{34,1}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{46,95}}</string>
+                <string>{{84,29},{100,90}}</string>
                 <key>sourceSize</key>
-                <string>{46,95}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena264.gif</key>
+            <key>athena031.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{441,895},{76,93}}</string>
+                <string>{{320,298},{58,96}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{76,93}}</string>
-                <key>sourceSize</key>
-                <string>{76,93}</string>
-            </dict>
-            <key>athena265.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{446,501},{74,95}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{74,95}}</string>
-                <key>sourceSize</key>
-                <string>{74,95}</string>
-            </dict>
-            <key>athena266.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{259,508},{49,100}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{49,100}}</string>
-                <key>sourceSize</key>
-                <string>{49,100}</string>
-            </dict>
-            <key>athena267.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{247,614},{56,100}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{56,100}}</string>
-                <key>sourceSize</key>
-                <string>{56,100}</string>
-            </dict>
-            <key>athena268.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{380,403},{96,94}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
+                <string>{12,-6}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{96,94}}</string>
+                <string>{{83,33},{58,96}}</string>
                 <key>sourceSize</key>
-                <string>{96,94}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena269.gif</key>
+            <key>athena032.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{442,599},{95,93}}</string>
+                <string>{{524,196},{52,90}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{6,-12}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{80,42},{52,90}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena033.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{364,864},{42,94}}</string>
+                <key>offset</key>
+                <string>{3,-8}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{82,36},{42,94}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena034.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{308,460},{54,96}}</string>
+                <key>offset</key>
+                <string>{1,-9}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{74,36},{54,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena035.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{376,358},{66,94}}</string>
+                <key>offset</key>
+                <string>{4,-9}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,37},{66,94}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena036.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{418,100},{66,96}}</string>
+                <key>offset</key>
+                <string>{5,-8}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{72,35},{66,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena037.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{486,100},{64,94}}</string>
+                <key>offset</key>
+                <string>{12,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{80,38},{64,94}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena038.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{458,198},{64,94}}</string>
+                <key>offset</key>
+                <string>{11,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{79,38},{64,94}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena039.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{418,100},{66,96}}</string>
+                <key>offset</key>
+                <string>{5,-8}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{72,35},{66,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena040.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{376,358},{66,94}}</string>
+                <key>offset</key>
+                <string>{4,-9}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,37},{66,94}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena041.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{512,294},{58,82}}</string>
+                <key>offset</key>
+                <string>{0,-15}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{95,93}}</string>
+                <string>{{71,49},{58,82}}</string>
                 <key>sourceSize</key>
-                <string>{95,93}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena270.gif</key>
+            <key>athena042.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{605,100},{79,94}}</string>
+                <string>{{268,564},{54,96}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{15,-8}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{79,94}}</string>
+                <string>{{88,35},{54,96}}</string>
                 <key>sourceSize</key>
-                <string>{79,94}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena271.gif</key>
+            <key>athena043.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{204,830},{69,99}}</string>
+                <string>{{2,902},{56,104}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{12,5}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{69,99}}</string>
+                <string>{{84,18},{56,104}}</string>
                 <key>sourceSize</key>
-                <string>{69,99}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena272.gif</key>
+            <key>athena044.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{336,807},{56,96}}</string>
+                <string>{{494,2},{56,94}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{14,12}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{56,96}}</string>
+                <string>{{86,16},{56,94}}</string>
                 <key>sourceSize</key>
-                <string>{56,96}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena273.gif</key>
+            <key>athena045.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{394,799},{45,96}}</string>
+                <string>{{300,768},{78,94}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{26,17}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{45,96}}</string>
+                <string>{{87,11},{78,94}}</string>
                 <key>sourceSize</key>
-                <string>{45,96}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena274.gif</key>
+            <key>athena046.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{209,931},{66,91}}</string>
+                <string>{{2,474},{48,106}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{19,22}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{66,91}}</string>
+                <string>{{95,0},{48,106}}</string>
                 <key>sourceSize</key>
-                <string>{66,91}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena275.gif</key>
+            <key>athena047.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{537,595},{64,92}}</string>
+                <string>{{300,768},{78,94}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{26,17}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{64,92}}</string>
+                <string>{{87,11},{78,94}}</string>
                 <key>sourceSize</key>
-                <string>{64,92}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena276.gif</key>
+            <key>athena048.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{227,224},{107,79}}</string>
+                <string>{{494,2},{56,94}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{14,12}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{86,16},{56,94}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena049.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{552,912},{58,72}}</string>
+                <key>offset</key>
+                <string>{-1,-20}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{70,59},{58,72}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena050.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{528,354},{80,88}}</string>
+                <key>offset</key>
+                <string>{-14,-3}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{46,34},{80,88}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena051.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{528,354},{80,88}}</string>
+                <key>offset</key>
+                <string>{-18,10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{42,21},{80,88}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena052.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{528,354},{80,88}}</string>
+                <key>offset</key>
+                <string>{-22,13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{38,18},{80,88}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena053.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{168,222},{100,52}}</string>
+                <key>offset</key>
+                <string>{-1,3}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{107,79}}</string>
+                <string>{{49,46},{100,52}}</string>
                 <key>sourceSize</key>
-                <string>{107,79}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena277.gif</key>
+            <key>athena054.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{88,856},{104,80}}</string>
+                <string>{{100,580},{104,48}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{-1,-17}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{104,80}}</string>
+                <string>{{47,68},{104,48}}</string>
                 <key>sourceSize</key>
-                <string>{104,80}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena278.gif</key>
+            <key>athena055.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{198,726},{48,102}}</string>
+                <string>{{498,952},{52,64}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{3,-5}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{48,102}}</string>
+                <string>{{77,48},{52,64}}</string>
                 <key>sourceSize</key>
-                <string>{48,102}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena279.gif</key>
+            <key>athena056.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{101,131},{110,100}}</string>
+                <string>{{162,360},{100,88}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{21,-12}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{110,100}}</string>
+                <string>{{71,43},{100,88}}</string>
                 <key>sourceSize</key>
-                <string>{110,100}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena280.gif</key>
+            <key>athena057.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{449,317},{58,82}}</string>
+                <string>{{146,900},{100,86}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{58,82}}</string>
-                <key>sourceSize</key>
-                <string>{58,82}</string>
-            </dict>
-            <key>athena281.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{767,190},{59,80}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{59,80}}</string>
-                <key>sourceSize</key>
-                <string>{59,80}</string>
-            </dict>
-            <key>athena282.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{199,509},{58,103}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{58,103}}</string>
-                <key>sourceSize</key>
-                <string>{58,103}</string>
-            </dict>
-            <key>athena283.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{253,112},{73,107}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{73,107}}</string>
-                <key>sourceSize</key>
-                <string>{73,107}</string>
-            </dict>
-            <key>athena284.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{488,696},{45,94}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{45,94}}</string>
-                <key>sourceSize</key>
-                <string>{45,94}</string>
-            </dict>
-            <key>athena285.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{482,2},{64,96}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{64,96}}</string>
-                <key>sourceSize</key>
-                <string>{64,96}</string>
-            </dict>
-            <key>athena286.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{202,614},{43,102}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{43,102}}</string>
-                <key>sourceSize</key>
-                <string>{43,102}</string>
-            </dict>
-            <key>athena287.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{365,216},{99,89}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
+                <string>{20,-11}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{99,89}}</string>
+                <string>{{70,43},{100,86}}</string>
                 <key>sourceSize</key>
-                <string>{99,89}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena288.gif</key>
+            <key>athena058.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{324,709},{58,96}}</string>
+                <string>{{498,952},{52,64}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{3,-5}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{58,96}}</string>
+                <string>{{77,48},{52,64}}</string>
                 <key>sourceSize</key>
-                <string>{58,96}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena289.gif</key>
+            <key>athena059.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{686,98},{51,90}}</string>
+                <string>{{526,836},{56,74}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{7,-6}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{51,90}}</string>
+                <string>{{79,44},{56,74}}</string>
                 <key>sourceSize</key>
-                <string>{51,90}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena290.gif</key>
+            <key>athena060.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{499,792},{42,93}}</string>
+                <string>{{408,852},{56,88}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-12}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{42,93}}</string>
+                <string>{{76,43},{56,88}}</string>
                 <key>sourceSize</key>
-                <string>{42,93}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena291.gif</key>
+            <key>athena061.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{545,201},{65,95}}</string>
+                <string>{{142,112},{50,108}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{8,-20}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{65,95}}</string>
+                <string>{{83,41},{50,108}}</string>
                 <key>sourceSize</key>
-                <string>{65,95}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena292.gif</key>
+            <key>athena062.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{612,196},{63,94}}</string>
+                <string>{{60,2},{46,114}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{11,-18}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{63,94}}</string>
+                <string>{{88,36},{46,114}}</string>
                 <key>sourceSize</key>
-                <string>{63,94}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena293.gif</key>
+            <key>athena063.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{589,298},{63,94}}</string>
+                <string>{{466,912},{38,72}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{63,94}}</string>
-                <key>sourceSize</key>
-                <string>{63,94}</string>
-            </dict>
-            <key>athena294.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{685,2},{66,94}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{66,94}}</string>
-                <key>sourceSize</key>
-                <string>{66,94}</string>
-            </dict>
-            <key>athena295.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{550,100},{53,95}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{53,95}}</string>
-                <key>sourceSize</key>
-                <string>{53,95}</string>
-            </dict>
-            <key>athena296.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{102,628},{56,104}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{56,104}}</string>
-                <key>sourceSize</key>
-                <string>{56,104}</string>
-            </dict>
-            <key>athena297.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{441,799},{56,94}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{56,94}}</string>
-                <key>sourceSize</key>
-                <string>{56,94}</string>
-            </dict>
-            <key>athena298.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{509,306},{78,93}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{78,93}}</string>
-                <key>sourceSize</key>
-                <string>{78,93}</string>
-            </dict>
-            <key>athena299.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,276},{52,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{52,125}}</string>
-                <key>sourceSize</key>
-                <string>{52,125}</string>
-            </dict>
-            <key>athena340.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{569,856},{52,63}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{52,63}}</string>
-                <key>sourceSize</key>
-                <string>{52,63}</string>
-            </dict>
-            <key>athena341.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{56,251},{59,111}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{59,111}}</string>
-                <key>sourceSize</key>
-                <string>{59,111}</string>
-            </dict>
-            <key>athena342.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{569,856},{52,63}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{52,63}}</string>
-                <key>sourceSize</key>
-                <string>{52,63}</string>
-            </dict>
-            <key>athena343.gif</key>
-            <dict>
-                <key>frame</key>
-                <string>{{380,107},{99,87}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
+                <string>{10,-2}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{99,87}}</string>
+                <string>{{91,41},{38,72}}</string>
                 <key>sourceSize</key>
-                <string>{99,87}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena344.gif</key>
+            <key>athena064.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{395,2},{99,85}}</string>
+                <string>{{466,836},{58,74}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{4,-8}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{75,46},{58,74}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena065.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{444,356},{90,82}}</string>
+                <key>offset</key>
+                <string>{24,-7}</string>
                 <key>rotated</key>
                 <true/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{99,85}}</string>
+                <string>{{79,41},{90,82}}</string>
                 <key>sourceSize</key>
-                <string>{99,85}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena345.gif</key>
+            <key>athena066.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{519,887},{48,71}}</string>
+                <string>{{320,662},{94,78}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{18,-10}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{71,46},{94,78}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena067.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{330,972},{44,72}}</string>
+                <key>offset</key>
+                <string>{12,-9}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{90,48},{44,72}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena068.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{408,852},{56,88}}</string>
+                <key>offset</key>
+                <string>{4,-12}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{48,71}}</string>
+                <string>{{76,43},{56,88}}</string>
                 <key>sourceSize</key>
-                <string>{48,71}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena366.gif</key>
+            <key>athena069.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{456,208},{87,96}}</string>
+                <string>{{142,112},{50,108}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{8,-20}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{87,96}}</string>
+                <string>{{83,41},{50,108}}</string>
                 <key>sourceSize</key>
-                <string>{87,96}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena367.gif</key>
+            <key>athena070.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{275,816},{59,96}}</string>
+                <string>{{60,2},{46,114}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{11,-18}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{59,96}}</string>
+                <string>{{88,36},{46,114}}</string>
                 <key>sourceSize</key>
-                <string>{59,96}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena368.gif</key>
+            <key>athena071.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{384,701},{55,96}}</string>
+                <string>{{440,454},{88,90}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{17,-8}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{55,96}}</string>
+                <string>{{73,38},{88,90}}</string>
                 <key>sourceSize</key>
-                <string>{55,96}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena369.gif</key>
+            <key>athena072.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{117,243},{58,110}}</string>
+                <string>{{418,296},{58,92}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{21,-9}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{92,38},{58,92}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena073.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{462,748},{86,86}}</string>
+                <key>offset</key>
+                <string>{16,-6}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{58,110}}</string>
+                <string>{{73,38},{86,86}}</string>
                 <key>sourceSize</key>
-                <string>{58,110}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena370.gif</key>
+            <key>athena074.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{717,288},{66,80}}</string>
+                <string>{{300,200},{80,96}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{17,-9}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{66,80}}</string>
+                <string>{{77,36},{80,96}}</string>
                 <key>sourceSize</key>
-                <string>{66,80}</string>
+                <string>{200,150}</string>
             </dict>
-            <key>athena371.gif</key>
+            <key>athena075.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{597,498},{60,92}}</string>
+                <string>{{404,960},{62,92}}</string>
                 <key>offset</key>
-                <string>{0,0}</string>
+                <string>{24,-10}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{93,39},{62,92}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena076.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{380,758},{92,80}}</string>
+                <key>offset</key>
+                <string>{17,-4}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{71,39},{92,80}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena077.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{186,676},{74,100}}</string>
+                <key>offset</key>
+                <string>{8,-10}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{60,92}}</string>
+                <string>{{71,35},{74,100}}</string>
                 <key>sourceSize</key>
-                <string>{60,92}</string>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena078.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{156,790},{76,100}}</string>
+                <key>offset</key>
+                <string>{8,-10}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{70,35},{76,100}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena079.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{222,212},{76,98}}</string>
+                <key>offset</key>
+                <string>{8,-11}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{70,37},{76,98}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena080.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{382,198},{74,96}}</string>
+                <key>offset</key>
+                <string>{8,-12}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,39},{74,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena081.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{364,456},{74,94}}</string>
+                <key>offset</key>
+                <string>{7,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{70,41},{74,94}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena082.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{342,100},{74,96}}</string>
+                <key>offset</key>
+                <string>{7,-12}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{70,39},{74,96}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena083.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{246,2},{74,98}}</string>
+                <key>offset</key>
+                <string>{8,-11}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,37},{74,98}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena084.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{252,360},{74,98}}</string>
+                <key>offset</key>
+                <string>{8,-11}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,37},{74,98}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena085.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{116,794},{38,104}}</string>
+                <key>offset</key>
+                <string>{-2,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{79,36},{38,104}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena086.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{190,2},{54,106}}</string>
+                <key>offset</key>
+                <string>{0,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{73,35},{54,106}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena087.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,796},{56,104}}</string>
+                <key>offset</key>
+                <string>{0,-14}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{72,37},{56,104}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena088.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{38,582},{60,104}}</string>
+                <key>offset</key>
+                <string>{1,-14}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,37},{60,104}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena089.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{60,796},{54,104}}</string>
+                <key>offset</key>
+                <string>{0,-14}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{73,37},{54,104}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena090.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{110,466},{46,104}}</string>
+                <key>offset</key>
+                <string>{-3,-14}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{74,37},{46,104}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena091.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,582},{34,106}}</string>
+                <key>offset</key>
+                <string>{-1,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{82,35},{34,106}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena092.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{104,902},{40,104}}</string>
+                <key>offset</key>
+                <string>{-2,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{78,36},{40,104}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena093.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{104,360},{56,104}}</string>
+                <key>offset</key>
+                <string>{1,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{73,36},{56,104}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena094.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{52,474},{56,104}}</string>
+                <key>offset</key>
+                <string>{-1,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,36},{56,104}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena095.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{84,688},{50,104}}</string>
+                <key>offset</key>
+                <string>{-2,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{73,36},{50,104}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena096.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{60,902},{42,104}}</string>
+                <key>offset</key>
+                <string>{-4,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{75,36},{42,104}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena097.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{88,248},{78,110}}</string>
+                <key>offset</key>
+                <string>{19,-8}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{80,28},{78,110}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena098.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,248},{84,112}}</string>
+                <key>offset</key>
+                <string>{16,-7}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{74,26},{84,112}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena099.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,132},{88,114}}</string>
+                <key>offset</key>
+                <string>{15,-5}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{71,23},{88,114}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena100.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{56,128}}</string>
+                <key>offset</key>
+                <string>{19,2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{91,9},{56,128}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
+            </dict>
+            <key>athena101.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{92,118},{48,110}}</string>
+                <key>offset</key>
+                <string>{14,-8}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{90,28},{48,110}}</string>
+                <key>sourceSize</key>
+                <string>{200,150}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -1665,7 +1327,7 @@
             <key>size</key>
             <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:eb86767c4d46a7e0b2f54773da38877c$</string>
+            <string>$TexturePacker:SmartUpdate:ca4ced92eb72c11139ef4154a5ccf962$</string>
             <key>textureFileName</key>
             <string>athena.png</string>
         </dict>

@@ -1,10 +1,10 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "athena-c3",
+  "_name": "athena-c4",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.7,
-  "sample": 10,
+  "_duration": 0.35,
+  "sample": 20,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
@@ -14,37 +14,30 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "221c8821-4614-43fc-9701-5dd90cb9c6cc"
+              "__uuid__": "b1a9fc21-e2cb-47b0-8bbf-160018ffc5b5"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "bf8de481-677f-45a7-b86a-a191e90b9dd8"
             }
           },
           {
             "frame": 0.1,
             "value": {
-              "__uuid__": "726fe138-762f-4067-bde5-b900c80f330c"
+              "__uuid__": "e40461ce-c0fd-4130-b2e2-9fcb14740285"
             }
           },
           {
-            "frame": 0.2,
+            "frame": 0.3,
             "value": {
-              "__uuid__": "ca14b166-d714-4c1b-b397-e9a109a6360b"
-            }
-          },
-          {
-            "frame": 0.5,
-            "value": {
-              "__uuid__": "c0808454-7a6f-486c-9cf0-53a0479b32b6"
-            }
-          },
-          {
-            "frame": 0.6,
-            "value": {
-              "__uuid__": "7db2d53b-66ea-4bf5-a466-f23d08d4bea5"
+              "__uuid__": "3538d036-bbe7-4d7f-8255-912b760f19f5"
             }
           }
         ]
       }
-    },
-    "props": {}
+    }
   },
   "events": [
     {
@@ -53,7 +46,7 @@
       "params": []
     },
     {
-      "frame": 0.6,
+      "frame": 0.3,
       "func": "skillEnd",
       "params": []
     }

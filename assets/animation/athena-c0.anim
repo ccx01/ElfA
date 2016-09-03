@@ -3,7 +3,7 @@
   "_name": "athena-c0",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.7,
+  "_duration": 0.5,
   "sample": 10,
   "speed": 1,
   "wrapMode": 1,
@@ -14,42 +14,37 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "4212ac2b-6a96-4394-91d9-6d4ed49bfae0"
+              "__uuid__": "6e63390c-22d7-412e-b856-7f698b20450a"
             }
           },
           {
             "frame": 0.1,
             "value": {
-              "__uuid__": "86426c50-54f6-4f2b-bd51-2d063726083c"
+              "__uuid__": "d662aba2-bf03-4a83-84be-40e2d8927431"
             }
           },
           {
             "frame": 0.2,
             "value": {
-              "__uuid__": "70e138b4-ed43-4641-93d4-b79cea2632be"
+              "__uuid__": "02d2845e-de67-4784-9fd1-cc7a1764e02d"
             }
           },
           {
             "frame": 0.3,
             "value": {
-              "__uuid__": "f3659eb1-a732-4959-9ab2-9bf91101350e"
+              "__uuid__": "c36dec69-7df9-494a-9afb-8ffae0c17960"
             }
           },
           {
             "frame": 0.4,
             "value": {
-              "__uuid__": "4bca52df-8840-4967-ad38-4c7efab666bc"
-            }
-          },
-          {
-            "frame": 0.6,
-            "value": {
-              "__uuid__": "4212ac2b-6a96-4394-91d9-6d4ed49bfae0"
+              "__uuid__": "300dd1a0-c2d2-419a-b1f9-0dbedb89572e"
             }
           }
         ]
       },
-      "athena": {}
+      "athena": {},
+      "cc.BoxCollider": {}
     },
     "props": {}
   },
@@ -60,8 +55,23 @@
       "params": []
     },
     {
-      "frame": 0.6,
+      "frame": 0.3,
+      "func": "hitPrefabShow",
+      "params": [
+        39,
+        20,
+        40,
+        20
+      ]
+    },
+    {
+      "frame": 0.4,
       "func": "skillEnd",
+      "params": []
+    },
+    {
+      "frame": 0.4,
+      "func": "hitPrefabHide",
       "params": []
     }
   ]

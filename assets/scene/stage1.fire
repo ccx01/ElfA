@@ -40,7 +40,8 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_id": "6b15bbc3-b8b7-482f-8b87-ccf529f002d5"
+    "_id": "6b15bbc3-b8b7-482f-8b87-ccf529f002d5",
+    "autoReleaseAssets": false
   },
   {
     "__type__": "cc.Node",
@@ -187,7 +188,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "athena",
+    "_name": "player",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -208,8 +209,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 48,
-      "height": 102
+      "width": 200,
+      "height": 150
     },
     "_children": [],
     "_rotationX": 0,
@@ -246,7 +247,7 @@
     "_prefab": {
       "__id__": 22
     },
-    "groupIndex": 0
+    "groupIndex": 1
   },
   {
     "__type__": "cc.Sprite",
@@ -257,10 +258,10 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "f8229dad-63dd-4e4a-93a6-3c04b0e8b3f4"
+      "__uuid__": "c36dec69-7df9-494a-9afb-8ffae0c17960"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 2,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -269,11 +270,11 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": true,
+    "_isTrimmedMode": false,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_atlas": {
-      "__uuid__": "08152622-2102-4558-adab-e99db7295b24"
+      "__uuid__": "e85273ce-c1a0-413c-b759-91b316bf57e5"
     }
   },
   {
@@ -295,7 +296,7 @@
         "__uuid__": "cd066119-af66-4447-bcba-bd2a8cce55ec"
       },
       {
-        "__uuid__": "da860f10-46d4-46c0-affe-1705f578f781"
+        "__uuid__": "e9c7f6d5-7082-4e1f-8ad0-0ad2b089631c"
       },
       {
         "__uuid__": "785f3ada-52e9-44c9-abf1-67547cfe92e7"
@@ -308,6 +309,12 @@
       },
       {
         "__uuid__": "2d8622eb-e68e-46e2-9f02-c906d471c711"
+      },
+      {
+        "__uuid__": "ba118c1d-e4c7-4683-9292-1ab4e3dcd2b7"
+      },
+      {
+        "__uuid__": "481c890c-d634-4e58-8703-9bca9db92012"
       }
     ],
     "playOnLoad": true
@@ -323,13 +330,14 @@
     "anim": {
       "__id__": 7
     },
-    "xMaxSpeed": 200,
-    "yMaxSpeed": 100,
+    "xMaxSpeed": 300,
+    "yMaxSpeed": 200,
     "canMove": true,
     "comboNext": "0",
     "comboLock": false,
     "state": "stand",
     "skillPool": [],
+    "playerHit": "default",
     "controller": {
       "__id__": 9
     },
@@ -338,6 +346,9 @@
     },
     "joypad": {
       "__id__": 11
+    },
+    "playerHitPrefab": {
+      "__uuid__": "2ffc1172-a2e3-4a96-b138-3c9c892df3c1"
     }
   },
   {
@@ -774,39 +785,29 @@
     }
   },
   {
-    "__type__": "b45613Jj2hEm7TPecWSBx6v",
+    "__type__": "cc.BoxCollider",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 5
     },
     "_enabled": true,
-    "anim": {
-      "__id__": 7
+    "tag": 0,
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 12
     },
-    "xMaxSpeed": 150,
-    "yMaxSpeed": 100,
-    "canMove": true,
-    "comboNext": 0,
-    "comboLock": false,
-    "state": "stand",
-    "skillPool": [],
-    "controller": {
-      "__id__": 9
-    },
-    "joypadPanel": {
-      "__id__": 10
-    },
-    "joypad": {
-      "__id__": 11
+    "_size": {
+      "__type__": "cc.Size",
+      "width": 32,
+      "height": 27
     }
   },
   {
     "__type__": "cc.PrefabInfo",
     "root": null,
-    "asset": {
-      "__uuid__": "8d6d9829-5ae6-4213-aedc-3faa67c2a034"
-    },
+    "asset": null,
     "fileId": "8c613NaYm9ODpBX9fklPzH8"
   },
   {
@@ -837,7 +838,7 @@
       "__id__": 5
     },
     "enemyPrefab": {
-      "__uuid__": "8d6d9829-5ae6-4213-aedc-3faa67c2a034"
+      "__uuid__": "4ba65447-dc51-403e-b236-79c40d4ed80c"
     }
   }
 ]

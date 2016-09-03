@@ -10,6 +10,9 @@ cc.Class({
         comboLock: false,
         state: "stand",
         skillPool: [],
+        playerHit: {
+            default: null,
+        },
         controller: {
             default: null,
             type: cc.Node,
@@ -21,6 +24,10 @@ cc.Class({
         joypad: {
             default: null,
             type: cc.Node
+        },
+        playerHitPrefab: {
+            default: null,
+            type: cc.Prefab
         },
     },
 
@@ -37,11 +44,29 @@ cc.Class({
         this.skillPool.push("combo" + this.comboNext);
 
         this.comboNext++;
-        if(this.comboNext > 4) {
+        if(this.comboNext > 6) {
             this.comboNext = 0;
         }
         this.skill();
     },
+
+    hitPrefabShow: function (x, y, w, h) {
+        // 碰撞框出现
+        this.playerHit = cc.instantiate(this.playerHitPrefab);
+
+        this.node.addChild(this.playerHit);
+
+        this.playerHit.setPosition(x, y);
+        this.playerHit.getComponents(cc.Collider)[0].size.width = w;
+        this.playerHit.getComponents(cc.Collider)[0].size.height = h;
+        this.playerHit.getComponents("playerHit")[0].damage = 100;
+    },
+
+    hitPrefabHide: function () {
+        // 碰撞框消失
+        this.playerHit.destroy();
+    },
+
 
     skillStart: function () {
         this.comboLock = true;
@@ -56,6 +81,7 @@ cc.Class({
 
     comboEnd: function () {
         this.skillPool = [];
+        this.skill();
     },
 
     skill: function () {
@@ -82,7 +108,7 @@ cc.Class({
             } else {
                 if(xs > 0) {
                     this.node.scaleX = Math.abs(this.node.scaleX);
-                } else {
+                } else if (xs < 0) {
                     this.node.scaleX = -Math.abs(this.node.scaleX);
                 }
                 this.statePool("walk");
@@ -110,6 +136,12 @@ cc.Class({
             case "combo3":
                 this.anim.play("athena-c3");
             break;
+            case "combo4":
+                this.anim.play("athena-c4");
+            break;
+            case "combo5":
+                this.anim.play("athena-c5");
+            break;
             case "stand":
                 this.anim.play("athena-stand");
             break;
@@ -135,18 +167,24 @@ cc.Class({
                 switch(keyCode) {
                     case cc.KEY.a:
                         self.xSpeed = - self.xMaxSpeed;
+                        self.move(self.xSpeed, self.ySpeed);
                         break;
                     case cc.KEY.d:
                         self.xSpeed = self.xMaxSpeed;
+                        self.move(self.xSpeed, self.ySpeed);
                         break;
                     case cc.KEY.w:
                         self.ySpeed = self.yMaxSpeed;
+                        self.move(self.xSpeed, self.ySpeed);
                         break;
                     case cc.KEY.s:
                         self.ySpeed = - self.yMaxSpeed;
+                        self.move(self.xSpeed, self.ySpeed);
+                        break;
+                    case cc.KEY.j:
+                        self.combo();
                         break;
                 }
-                self.move(self.xSpeed, self.ySpeed);
             },
             onKeyReleased: function(keyCode, event) {
                 switch(keyCode) {
@@ -206,10 +244,12 @@ cc.Class({
                 joypad.y = Math.min(40, Math.max((YtouchMove - Ytouch) * 0.5, -40));
             },
             onTouchEnded: function (touch, event) {
+                if(!mousemove) return;
                 self.move(0, 0);
                 mousemove = false;
             },
             onTouchCancelled: function (touch, event) {
+                if(!mousemove) return;
                 self.move(0, 0);
                 mousemove = false;
             },
@@ -217,56 +257,6 @@ cc.Class({
         // 绑定单点触摸事件
         cc.eventManager.addListener(listener, this.node);
 
-
-        /*var listener = {
-            event: cc.EventListener.TOUCH_ALL_AT_ONCE,
-            onTouchesBegan: function (touches, event) {
-                // self.combo()
-                Xtouch = touches[0].getLocationX();
-                Ytouch = touches[0].getLocationY();
-
-                if(Xtouch > 0 && Xtouch < 300 && Ytouch > 0 && Ytouch < 300) {
-                    // 摇杆
-                    mousemove = true;
-                    joypadPanel.x = Xtouch;
-                    joypadPanel.y = Ytouch;
-                }
-
-                return true;
-            },
-            onTouchesMoved: function (touches, event) {
-                if(!mousemove) return;
-                XtouchMove = touches[0].getLocationX();
-                YtouchMove = touches[0].getLocationY();
-                if(XtouchMove > Xtouch) {
-                    xs = self.xMaxSpeed;
-                } else if(XtouchMove < Xtouch) {
-                    xs = - self.xMaxSpeed;
-                }
-
-                if(YtouchMove > Ytouch) {
-                    ys = self.yMaxSpeed;
-                } else if (YtouchMove < Ytouch) {
-                    ys = - self.yMaxSpeed;
-                }
-
-                xs = xs || 0;
-                ys = ys || 0;
-                self.move(xs, ys);
-
-                joypad.x = Math.min(40, Math.max((XtouchMove - Xtouch) * 0.5, -40));
-                joypad.y = Math.min(40, Math.max((YtouchMove - Ytouch) * 0.5, -40));
-            },
-            onTouchesEnded: function (touches, event) {
-                self.move(0, 0);
-                mousemove = false;
-            },
-            onTouchesCancelled: function (touches, event) {
-                self.move(0, 0);
-                mousemove = false;
-            }
-        }
-        cc.eventManager.addListener(listener, joypadPanel);*/
     },
     
     // use this for initialization
@@ -275,34 +265,6 @@ cc.Class({
         this.ySpeed = 0;
         // 初始化键盘输入监听
         this.setInputControl();
-
-        /*this.anim.on('finished',  function() {
-            switch(this.anim.currentClip.name) {
-                case 'athena-c0':
-                case 'athena-c1':
-                case 'athena-c2':
-                case 'athena-c3':
-                console.log(this.anim.currentClip.name,"done")
-                    this.comboLock = false;
-                    this.skill();
-                    break;
-            }
-        }, this);*/
-
-
-        /*this.anim.on('play', function() {
-            if(this.anim.currentClip) {
-                switch(this.anim.currentClip.name) {
-                    case 'athena-c0':
-                    case 'athena-c1':
-                    case 'athena-c2':
-                    case 'athena-c3':
-                console.log(this.anim.currentClip.name,"play")
-                        this.comboLock = true;
-                        break;
-                }
-            }
-        }, this);*/
     },
 
     // called every frame, uncomment this function to activate update callback
@@ -312,4 +274,5 @@ cc.Class({
         this.node.y += this.ySpeed * dt;
         this.node.zIndex = 1000 - this.node.y;
     },
+
 });

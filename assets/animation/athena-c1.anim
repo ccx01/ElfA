@@ -3,7 +3,7 @@
   "_name": "athena-c1",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.5333333333333333,
+  "_duration": 0.4666666666666667,
   "sample": 15,
   "speed": 1,
   "wrapMode": 1,
@@ -14,43 +14,37 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "d7d063ef-e8f3-4fad-8929-4928f2a0eaf4"
+              "__uuid__": "45df5222-514c-4e49-948c-20422d5bfb8d"
             }
           },
           {
             "frame": 0.06666666666666667,
             "value": {
-              "__uuid__": "2f4a09ad-4f89-47ff-997e-9f3eeab4fe57"
+              "__uuid__": "4d613ede-b75e-40ad-a2c8-dda89f750943"
             }
           },
           {
             "frame": 0.13333333333333333,
             "value": {
-              "__uuid__": "00e166e6-9d5e-4ba8-aaec-ffc26055d6b8"
-            }
-          },
-          {
-            "frame": 0.2,
-            "value": {
-              "__uuid__": "3deb4564-6749-4f4c-a434-d671380af6ae"
+              "__uuid__": "21161897-8d40-47cd-b339-436fa4698a3f"
             }
           },
           {
             "frame": 0.26666666666666666,
             "value": {
-              "__uuid__": "efe3b7ca-d956-486d-9a5c-43e6b7d084fb"
+              "__uuid__": "194b88c1-7a4b-4488-b18e-ec7daaa9f34c"
             }
           },
           {
             "frame": 0.3333333333333333,
             "value": {
-              "__uuid__": "135c83b0-9cda-4ad5-8143-92d039ce2c37"
+              "__uuid__": "2f3dcf30-9223-4117-a37d-0ba20d42dcae"
             }
           },
           {
-            "frame": 0.4666666666666667,
+            "frame": 0.4,
             "value": {
-              "__uuid__": "4212ac2b-6a96-4394-91d9-6d4ed49bfae0"
+              "__uuid__": "539ba736-f9fa-4643-a63d-8cc8217a3156"
             }
           }
         ]
@@ -67,7 +61,7 @@
       "params": []
     },
     {
-      "frame": 0.4666666666666667,
+      "frame": 0.4,
       "func": "skillEnd",
       "params": []
     }

@@ -74,6 +74,12 @@ cc.Class({
         }
     },
 
+    hurt: function(x) {
+        this.statePool("hurt");
+        this.node.scaleX = x * Math.abs(this.node.scaleX);
+        this.node.x -= x * 20;
+    },
+
     statePool: function(s) {
         if(this.state == s) return;
         // 状态池
@@ -96,6 +102,9 @@ cc.Class({
             break;
             case "walk":
                 this.anim.play("athena-walk");
+            break;
+            case "hurt":
+                this.anim.play("athena-hurt");
             break;
         }
     },

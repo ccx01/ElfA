@@ -1,12 +1,26 @@
 {
-  "start-scene": "current",
-  "group-list": [
-    "default"
-  ],
   "collision-matrix": [
     [
+      false,
+      true,
+      false
+    ],
+    [
+      true,
+      false,
       true
+    ],
+    [
+      false,
+      true,
+      false
     ]
   ],
-  "excluded-modules": []
+  "excluded-modules": [],
+  "group-list": [
+    "default",
+    "player",
+    "enemy"
+  ],
+  "start-scene": "current"
 }

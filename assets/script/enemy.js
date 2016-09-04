@@ -74,11 +74,18 @@ cc.Class({
         }
     },
 
-    hurt: function(x) {
-        this.statePool("hurt");
-        this.node.scaleX = x * Math.abs(this.node.scaleX);
-        this.node.x -= x * 20;
+    hurt: function(x, d, lie) {
+        if(lie) {
+            this.statePool("lie");
+            this.node.scaleX = x * Math.abs(this.node.scaleX);
+            this.xSpeed = - 500 * x;
+        } else {
+            this.statePool("hurt");
+            this.node.scaleX = x * Math.abs(this.node.scaleX);
+            this.node.x -= x * 10;
+        }
     },
+
 
     statePool: function(s) {
         if(this.state == s) return;
@@ -106,147 +113,12 @@ cc.Class({
             case "hurt":
                 this.anim.play("athena-hurt");
             break;
+            case "lie":
+                this.anim.play("athena-lie");
+            break;
         }
     },
 
-    stateBuffer: function() {
-        // 状态缓冲区
-    },
-
-    setInputControl: function () {
-        var self = this;
-
-        var mousemove = false;
-        // 添加键盘事件监听
-        cc.eventManager.addListener({
-            event: cc.EventListener.KEYBOARD,
-            onKeyPressed: function(keyCode, event) {
-                switch(keyCode) {
-                    case cc.KEY.a:
-                        self.xSpeed = - self.xMaxSpeed;
-                        break;
-                    case cc.KEY.d:
-                        self.xSpeed = self.xMaxSpeed;
-                        break;
-                    case cc.KEY.w:
-                        self.ySpeed = self.yMaxSpeed;
-                        break;
-                    case cc.KEY.s:
-                        self.ySpeed = - self.yMaxSpeed;
-                        break;
-                }
-                self.move(self.xSpeed, self.ySpeed);
-            },
-            onKeyReleased: function(keyCode, event) {
-                switch(keyCode) {
-                    case cc.KEY.a:
-                    case cc.KEY.d:
-                        self.xSpeed = 0;
-                        break;
-                    case cc.KEY.w:
-                    case cc.KEY.s:
-                        self.ySpeed = 0;
-                        break;
-                }
-                self.move(self.xSpeed, self.ySpeed);
-            }
-        }, self.node);
-        
-        var Xtouch,Ytouch;
-        var XtouchMove,YtouchMove;
-        var xs, ys;
-        var listener = {
-            event: cc.EventListener.TOUCH_ONE_BY_ONE,
-            onTouchBegan: function (touch, event) {
-                if(mousemove) return;
-                Xtouch = touch.getLocationX();
-                Ytouch = touch.getLocationY();
-                return true;
-            },
-            onTouchMoved: function (touch, event) {
-                if(!mousemove) return;
-                XtouchMove = touch.getLocationX();
-                YtouchMove = touch.getLocationY();
-                if(XtouchMove > Xtouch) {
-                    xs = self.xMaxSpeed;
-                } else if(XtouchMove < Xtouch) {
-                    xs = - self.xMaxSpeed;
-                }
-
-                if(YtouchMove > Ytouch) {
-                    ys = self.yMaxSpeed;
-                } else if (YtouchMove < Ytouch) {
-                    ys = - self.yMaxSpeed;
-                }
-
-                xs = xs || 0;
-                ys = ys || 0;
-                self.move(xs, ys);
-            },
-            onTouchEnded: function (touch, event) {
-                self.move(0, 0);
-                mousemove = false;
-            },
-            onTouchCancelled: function (touch, event) {
-                self.move(0, 0);
-                mousemove = false;
-            },
-        }
-        // 绑定单点触摸事件
-        cc.eventManager.addListener(listener, this.node);
-
-
-        /*var listener = {
-            event: cc.EventListener.TOUCH_ALL_AT_ONCE,
-            onTouchesBegan: function (touches, event) {
-                // self.combo()
-                Xtouch = touches[0].getLocationX();
-                Ytouch = touches[0].getLocationY();
-
-                if(Xtouch > 0 && Xtouch < 300 && Ytouch > 0 && Ytouch < 300) {
-                    // 摇杆
-                    mousemove = true;
-                    joypadPanel.x = Xtouch;
-                    joypadPanel.y = Ytouch;
-                }
-
-                return true;
-            },
-            onTouchesMoved: function (touches, event) {
-                if(!mousemove) return;
-                XtouchMove = touches[0].getLocationX();
-                YtouchMove = touches[0].getLocationY();
-                if(XtouchMove > Xtouch) {
-                    xs = self.xMaxSpeed;
-                } else if(XtouchMove < Xtouch) {
-                    xs = - self.xMaxSpeed;
-                }
-
-                if(YtouchMove > Ytouch) {
-                    ys = self.yMaxSpeed;
-                } else if (YtouchMove < Ytouch) {
-                    ys = - self.yMaxSpeed;
-                }
-
-                xs = xs || 0;
-                ys = ys || 0;
-                self.move(xs, ys);
-
-                joypad.x = Math.min(40, Math.max((XtouchMove - Xtouch) * 0.5, -40));
-                joypad.y = Math.min(40, Math.max((YtouchMove - Ytouch) * 0.5, -40));
-            },
-            onTouchesEnded: function (touches, event) {
-                self.move(0, 0);
-                mousemove = false;
-            },
-            onTouchesCancelled: function (touches, event) {
-                self.move(0, 0);
-                mousemove = false;
-            }
-        }
-        cc.eventManager.addListener(listener, joypadPanel);*/
-    },
-    
     // use this for initialization
     onLoad: function () {
         this.xSpeed = 0;

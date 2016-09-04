@@ -3,7 +3,7 @@
   "_name": "athena-hurt",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.25,
+  "_duration": 0.2,
   "sample": 20,
   "speed": 1,
   "wrapMode": 1,
@@ -18,21 +18,9 @@
             }
           },
           {
-            "frame": 0.1,
-            "value": {
-              "__uuid__": "4b032180-0189-4687-b6eb-fba14cbbbd39"
-            }
-          },
-          {
             "frame": 0.15,
             "value": {
-              "__uuid__": "269cab01-d510-4e07-b994-eddfabdbca5c"
-            }
-          },
-          {
-            "frame": 0.2,
-            "value": {
-              "__uuid__": "8f44de9b-2d0f-4c64-be49-d0c5ebbe3701"
+              "__uuid__": "b9fe7933-eaaf-47dd-8faa-34c32cad3013"
             }
           }
         ]
@@ -46,7 +34,7 @@
       "params": []
     },
     {
-      "frame": 0.25,
+      "frame": 0.15,
       "func": "",
       "params": []
     }

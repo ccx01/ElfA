@@ -59,7 +59,7 @@ cc.Class({
         this.skill();
     },
 
-    hitPrefabShow: function (x, y, w, h, ex, ey) {
+    hitPrefabShow: function (x, y, w, h, lie, ex, ey) {
         // 碰撞框出现
         // ex, ey 打击效果出现的位置
         this.playerHit = cc.instantiate(this.playerHitPrefab);
@@ -70,6 +70,7 @@ cc.Class({
         this.playerHit.getComponents(cc.Collider)[0].size.width = w;
         this.playerHit.getComponents(cc.Collider)[0].size.height = h;
         this.playerHit.getComponents("playerHit")[0].damage = 100;
+        this.playerHit.getComponents("playerHit")[0].lie = lie || this.playerHit.getComponents("playerHit")[0].lie;
 
         this.ex = ex || x;
         this.ey = ey || y;

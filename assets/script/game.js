@@ -15,6 +15,8 @@ cc.Class({
     enemyShow: function(x,y) {
         // 使用给定的模板在场景中生成一个新节点
         var newEnemy = cc.instantiate(this.enemyPrefab);
+
+        newEnemy.getComponent('enemy').game = this;
         // 将新增的节点添加到 Canvas 节点下面
         this.node.addChild(newEnemy);
         // 为星星设置一个随机位置
@@ -24,7 +26,7 @@ cc.Class({
     onLoad: function () {
         this.enemyShow(100, -60);
 
-        this.enemyShow(0, -100);
+        this.enemyShow(90, -80);
         var manager = cc.director.getCollisionManager();
         manager.enabled = true;
         manager.enabledDebugDraw = true;

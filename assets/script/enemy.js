@@ -75,6 +75,9 @@ cc.Class({
     },
 
     hurt: function(x, d, lie) {
+        this.canMove = false;
+        this.xSpeed = 0;
+        this.ySpeed = 0;
         if(lie) {
             this.statePool("lie");
             this.node.scaleX = x * Math.abs(this.node.scaleX);
@@ -86,6 +89,15 @@ cc.Class({
         }
     },
 
+    onGround: function() {
+        this.xSpeed = 0;
+        this.statePool("onground");
+    },
+
+    invincible: function(bool) {
+        // 禁用受击碰撞框，无敌状态
+        this.node.getComponents(cc.Collider)[0].enabled = bool;
+    },
 
     statePool: function(s) {
         if(this.state == s) return;
@@ -116,6 +128,37 @@ cc.Class({
             case "lie":
                 this.anim.play("athena-lie");
             break;
+            case "onground":
+                this.anim.play("athena-ground");
+            break;
+        }
+    },
+
+    AI: function () {
+
+        
+        if(Math.abs(this.game.athena.x - this.node.x) < 40 && Math.abs(this.game.athena.y - this.node.y) < 20) {
+            this.statePool("combo0");
+            return;
+        }
+
+        if(Math.random() < 0.95) return;
+
+        if(Math.random() > 0.8) {
+            var xs, ys;
+            if(this.game.athena.x > this.node.x) {
+                xs = this.xMaxSpeed;
+            } else {
+                xs = - this.xMaxSpeed;
+            }
+            if(this.game.athena.y > this.node.y) {
+                ys = this.yMaxSpeed;
+            } else {
+                ys = - this.yMaxSpeed;
+            }
+            this.move(xs, ys);
+        } else {
+            this.move(0, 0);
         }
     },
 
@@ -128,13 +171,19 @@ cc.Class({
             this.comboLock = false;
             this.skill();
         }, this);
+
+        console.log(this.game.athena)
     },
 
     // called every frame, uncomment this function to activate update callback
     
     update: function (dt) {
+        this.AI();
         this.node.x += this.xSpeed * dt;
         this.node.y += this.ySpeed * dt;
         this.node.zIndex = 1000 - this.node.y;
+
+        // 限制位移的垂直位置
+        this.node.y = Math.min(Math.max(this.node.y, -170), -30);
     },
 });

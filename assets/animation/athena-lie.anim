@@ -61,6 +61,11 @@
       "frame": 0.3,
       "func": "skillEnd",
       "params": []
+    },
+    {
+      "frame": 0.3,
+      "func": "onGround",
+      "params": []
     }
   ]
 }

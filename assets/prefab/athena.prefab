@@ -141,6 +141,9 @@
       },
       {
         "__uuid__": "8c7c73d6-0d49-4c7c-98af-f87b1de1d00b"
+      },
+      {
+        "__uuid__": "f6d7fffd-8c81-44b5-94a5-e43b7e16e48e"
       }
     ],
     "playOnLoad": true
@@ -162,7 +165,8 @@
     "comboNext": 0,
     "comboLock": false,
     "state": "stand",
-    "skillPool": []
+    "skillPool": [],
+    "player": null
   },
   {
     "__type__": "cc.BoxCollider",
@@ -189,9 +193,7 @@
     "root": {
       "__id__": 1
     },
-    "asset": {
-      "__uuid__": "4ba65447-dc51-403e-b236-79c40d4ed80c"
-    },
-    "fileId": "8c613NaYm9ODpBX9fklPzH8"
+    "asset": null,
+    "fileId": "3558baYgIRJD5nvcb3O4zUo"
   }
 ]

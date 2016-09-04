@@ -38,6 +38,10 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
+        hitAudio: {
+            default: null,
+            url: cc.AudioClip
+        }
     },
 
     moveOffset: function(offset) {
@@ -86,6 +90,8 @@ cc.Class({
         this.hitEffect = cc.instantiate(this.hitEffectPrefab);
         this.node.addChild(this.hitEffect);
         this.hitEffect.setPosition(this.ex, this.ey);
+        
+        cc.audioEngine.playEffect(this.hitAudio, false);
     },
 
     skillStart: function () {

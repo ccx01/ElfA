@@ -29,8 +29,8 @@ cc.Class({
         this.enemyShow(90, -80);
         var manager = cc.director.getCollisionManager();
         manager.enabled = true;
-        manager.enabledDebugDraw = true;
-        manager.enabledDrawBoundingBox = true;
+        // manager.enabledDebugDraw = true;
+        // manager.enabledDrawBoundingBox = true;
     },
 
     // called every frame, uncomment this function to activate update callback

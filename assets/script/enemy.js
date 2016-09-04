@@ -136,7 +136,7 @@ cc.Class({
 
     AI: function () {
 
-        
+
         if(Math.abs(this.game.athena.x - this.node.x) < 40 && Math.abs(this.game.athena.y - this.node.y) < 20) {
             this.statePool("combo0");
             return;
@@ -172,7 +172,6 @@ cc.Class({
             this.skill();
         }, this);
 
-        console.log(this.game.athena)
     },
 
     // called every frame, uncomment this function to activate update callback

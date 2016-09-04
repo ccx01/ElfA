@@ -10,6 +10,7 @@ cc.Class({
             // z轴判定，超出范围不进行碰撞
             var face = - Math.abs(self.node.parent.scaleX) / self.node.parent.scaleX;
             other.node.getComponent("enemy").hurt(face);
+            self.node.parent.getComponent("player").hitEffectPrefabShow();
         }
     },
 

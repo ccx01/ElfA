@@ -10,7 +10,12 @@ cc.Class({
         comboLock: false,
         state: "stand",
         skillPool: [],
+        ex: 0,
+        ey: 0,
         playerHit: {
+            default: null,
+        },
+        hitEffect: {
             default: null,
         },
         controller: {
@@ -26,6 +31,10 @@ cc.Class({
             type: cc.Node
         },
         playerHitPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
+        hitEffectPrefab: {
             default: null,
             type: cc.Prefab
         },
@@ -50,8 +59,9 @@ cc.Class({
         this.skill();
     },
 
-    hitPrefabShow: function (x, y, w, h) {
+    hitPrefabShow: function (x, y, w, h, ex, ey) {
         // 碰撞框出现
+        // ex, ey 打击效果出现的位置
         this.playerHit = cc.instantiate(this.playerHitPrefab);
 
         this.node.addChild(this.playerHit);
@@ -60,6 +70,9 @@ cc.Class({
         this.playerHit.getComponents(cc.Collider)[0].size.width = w;
         this.playerHit.getComponents(cc.Collider)[0].size.height = h;
         this.playerHit.getComponents("playerHit")[0].damage = 100;
+
+        this.ex = ex || x;
+        this.ey = ey || y;
     },
 
     hitPrefabHide: function () {
@@ -67,6 +80,12 @@ cc.Class({
         this.playerHit.destroy();
     },
 
+    hitEffectPrefabShow: function () {
+        // 打击效果,效果位置在建立打击框时设置
+        this.hitEffect = cc.instantiate(this.hitEffectPrefab);
+        this.node.addChild(this.hitEffect);
+        this.hitEffect.setPosition(this.ex, this.ey);
+    },
 
     skillStart: function () {
         this.comboLock = true;

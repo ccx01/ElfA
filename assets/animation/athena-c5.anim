@@ -70,6 +70,21 @@
       "params": []
     },
     {
+      "frame": 0.2,
+      "func": "hitPrefabShow",
+      "params": [
+        66,
+        13,
+        66,
+        45
+      ]
+    },
+    {
+      "frame": 0.4666666666666667,
+      "func": "hitPrefabHide",
+      "params": []
+    },
+    {
       "frame": 0.6,
       "func": "skillEnd",
       "params": []

@@ -53,8 +53,23 @@
       "params": []
     },
     {
+      "frame": 0.2,
+      "func": "hitPrefabShow",
+      "params": [
+        67,
+        8,
+        64,
+        35
+      ]
+    },
+    {
       "frame": 0.6,
       "func": "skillEnd",
+      "params": []
+    },
+    {
+      "frame": 0.6,
+      "func": "hitPrefabHide",
       "params": []
     }
   ]

@@ -18,6 +18,10 @@ cc.Class({
         hitEffect: {
             default: null,
         },
+        hp: {
+            default: null,
+            type: cc.ProgressBar,
+        },
         controller: {
             default: null,
             type: cc.Node,
@@ -73,7 +77,7 @@ cc.Class({
         this.playerHit.setPosition(x, y);
         this.playerHit.getComponents(cc.Collider)[0].size.width = w;
         this.playerHit.getComponents(cc.Collider)[0].size.height = h;
-        this.playerHit.getComponents("playerHit")[0].damage = 100;
+        this.playerHit.getComponents("playerHit")[0].damage = 1;
         this.playerHit.getComponents("playerHit")[0].lie = lie || this.playerHit.getComponents("playerHit")[0].lie;
 
         this.ex = ex || x;
@@ -122,6 +126,7 @@ cc.Class({
             this.comboNext = 0;
             this.statePool("stand");
         }
+        this.hp.progress = Math.random();
     },
 
     move: function(xs, ys) {

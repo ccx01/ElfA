@@ -91,10 +91,8 @@
       "__id__": 1
     },
     "_enabled": true,
-    "damage": 10,
-    "hitEffectPrefab": {
-      "__uuid__": "a8a29117-f85c-439c-95e1-c100e89b7515"
-    }
+    "damage": 1,
+    "lie": false
   },
   {
     "__type__": "cc.PrefabInfo",

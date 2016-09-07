@@ -10,6 +10,12 @@ cc.Class({
         comboLock: false,
         state: "stand",
         skillPool: [],
+        hp: 10,
+        hpMax: 10,
+        hpLen: {
+            default: null,
+            type: cc.Node,
+        },
     },
 
     moveOffset: function(offset) {
@@ -87,11 +93,18 @@ cc.Class({
             this.node.scaleX = x * Math.abs(this.node.scaleX);
             this.node.x -= x * 10;
         }
+        this.hp -= d;
+        this.hp = Math.max(0, this.hp);
+        this.hpLen.width = this.hp / this.hpMax * 100;
     },
 
     onGround: function() {
         this.xSpeed = 0;
         this.statePool("onground");
+        if(this.hp == 0) {
+            this.node.destroy();
+            this.game.enemyShow(-600, 0);
+        }
     },
 
     invincible: function(bool) {
@@ -171,7 +184,6 @@ cc.Class({
             this.comboLock = false;
             this.skill();
         }, this);
-
     },
 
     // called every frame, uncomment this function to activate update callback

@@ -40,8 +40,7 @@
     "_globalZOrder": 0,
     "_tag": -1,
     "_opacityModifyRGB": false,
-    "_id": "6b15bbc3-b8b7-482f-8b87-ccf529f002d5",
-    "autoReleaseAssets": false
+    "_id": "6b15bbc3-b8b7-482f-8b87-ccf529f002d5"
   },
   {
     "__type__": "cc.Node",
@@ -338,7 +337,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "496c7aaa-fceb-4a20-8382-7deb59eb0192"
+      "__uuid__": "22d77a83-142c-4382-bd14-01cbd9eacd50"
     },
     "_type": 0,
     "_sizeMode": 2,
